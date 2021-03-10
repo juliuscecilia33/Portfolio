@@ -1,4 +1,5 @@
 import React from "react";
+import { Link as ReactRouterLink } from "react-router-dom";
 
 import { Container, Links, Link, Icons, Icon } from "./styles/header";
 
@@ -14,8 +15,12 @@ Header.Links = function HeaderLinks({ children, ...restProps }) {
   return <Links {...restProps}>{children}</Links>;
 };
 
-Header.Link = function HeaderLink({ children, ...restProps }) {
-  return <Link {...restProps}>{children}</Link>;
+Header.Link = function HeaderLink({ to, children, ...restProps }) {
+  return (
+    <ReactRouterLink to={to}>
+      <Link {...restProps}>{children}</Link>
+    </ReactRouterLink>
+  );
 };
 
 Header.Icons = function HeaderIcons({ children, ...restProps }) {
