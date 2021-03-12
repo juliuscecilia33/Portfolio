@@ -17,7 +17,7 @@ export const Text = styled.div`
 `;
 
 export const Title = styled.h2`
-  font-size: 6rem;
+  font-size: 5.3rem;
   font-weight: 700;
   color: #463f3a;
   text-align: left;
@@ -30,11 +30,11 @@ export const Title = styled.h2`
 
 export const Description = styled.p`
   width: 80%;
-  font-size: 1.5rem;
-  font-weight: 400;
+  font-size: 1.4rem;
+  font-weight: 500;
   color: #bcb8b1;
   text-align: left;
-  line-height: 33px;
+  line-height: 31px;
 
   span {
     color: #8a817c;
