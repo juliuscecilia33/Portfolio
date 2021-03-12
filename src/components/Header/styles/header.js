@@ -7,13 +7,13 @@ export const Container = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 12%;
+  padding: 0 15%;
 `;
 
 export const Links = styled.div`
   width: 45%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 `;
 

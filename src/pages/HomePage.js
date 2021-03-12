@@ -1,6 +1,11 @@
 import React from "react";
-import { HeaderContainer } from "../containers";
+import { HeaderContainer, HeroContainer } from "../containers";
 
 export default function HomePage() {
-  return <HeaderContainer />;
+  return (
+    <>
+      <HeaderContainer />
+      <HeroContainer />
+    </>
+  );
 }
