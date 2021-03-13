@@ -33,7 +33,7 @@ export const Cards = styled.div`
 
 export const Card = styled.div`
   width: 425px;
-  height: 580px;
+  height: 560px;
   background-color: ${({ bgColor }) => bgColor};
   display: flex;
   flex-direction: column;

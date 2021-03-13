@@ -2,10 +2,10 @@ import React from "react";
 import { Header } from "../components";
 import * as ROUTES from "../constants/routes";
 
-export function HeaderContainer() {
+export function HeaderContainer({ bgColor }) {
   return (
     <>
-      <Header bgColor="#F4F3EE">
+      <Header bgColor={bgColor}>
         <Header.Links>
           <Header.Link to={ROUTES.HOME}>Home</Header.Link>
           <Header.Link to={ROUTES.HOME}>Projects</Header.Link>

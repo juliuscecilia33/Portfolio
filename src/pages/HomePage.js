@@ -10,7 +10,7 @@ import {
 export default function HomePage() {
   return (
     <>
-      <HeaderContainer />
+      <HeaderContainer bgColor="#F4F3EE" />
       <HeroContainer />
       <ProjectsHContainer />
       <ExperiencesContainer />

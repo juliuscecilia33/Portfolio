@@ -27,7 +27,7 @@ export const Cards = styled.div`
 
 export const Card = styled.div`
   width: 100%;
-  height: 370px;
+  height: 330px;
   background: #f4f3ee;
   display: flex;
   justify-content: space-around;
