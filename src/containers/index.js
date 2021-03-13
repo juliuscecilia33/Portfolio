@@ -5,3 +5,4 @@ export { ProjectsVContainer } from "./projectsV";
 export { ExperiencesContainer } from "./experiences";
 export { FooterContainer } from "./footer";
 export { HeadingContainer } from "./heading";
+export { InstaDeckContainer } from "./instadeck";
