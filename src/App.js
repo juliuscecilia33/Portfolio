@@ -13,7 +13,7 @@ export default function App() {
           </Route>
         </Switch>
         <Switch>
-          <Route path={ROUTES.FEATURED} exact>
+          <Route path={ROUTES.PROJECTS} exact>
             <FeaturedPage />
           </Route>
         </Switch>
