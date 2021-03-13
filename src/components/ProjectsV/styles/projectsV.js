@@ -109,7 +109,7 @@ export const Hashtags = styled.div`
 
 export const Hashtag = styled.div`
   height: 28px;
-  padding: 0 1.5rem;
+  padding: 0 1.3rem;
   background: linear-gradient(
     130.16deg,
     #e0afa0 9.59%,
