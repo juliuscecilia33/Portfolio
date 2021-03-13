@@ -3,3 +3,4 @@ export { HeroContainer } from "./hero";
 export { ProjectsHContainer } from "./projectsH";
 export { ExperiencesContainer } from "./experiences";
 export { FooterContainer } from "./footer";
+export { HeadingContainer } from "./heading";
