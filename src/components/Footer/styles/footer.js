@@ -2,12 +2,13 @@ import styled from "styled-components/macro";
 
 export const Container = styled.div`
   width: 100%;
-  height: 8vh;
+  height: 12vh;
   background-color: #8a817c;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 20%;
+  margin-top: 9%;
 `;
 
 export const Links = styled.div`
@@ -20,11 +21,11 @@ export const Links = styled.div`
 export const Link = styled.h3`
   font-size: 18px;
   font-weight: 500;
-  color: #bcb8b1;
+  color: #f4f3ee;
   transition: all 0.5s ease;
 
   &:hover {
-    color: #8a817c;
+    color: #e0afa0;
   }
 `;
 
@@ -38,6 +39,12 @@ export const Icons = styled.div`
 export const Icon = styled.div`
   i {
     font-size: 28px;
-    color: #e0afa0;
+    color: #f4f3ee;
+    cursor: pointer;
+    transition: all 0.5s ease;
+
+    &:hover {
+      color: #e0afa0;
+    }
   }
 `;
