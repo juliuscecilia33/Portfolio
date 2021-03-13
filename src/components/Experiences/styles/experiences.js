@@ -32,6 +32,9 @@ export const Card = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+  margin-bottom: 4rem;
+  border-radius: 50px;
 `;
 
 export const Image = styled.div`

@@ -3,6 +3,7 @@ import {
   HeaderContainer,
   HeroContainer,
   ProjectsHContainer,
+  ExperiencesContainer,
 } from "../containers";
 
 export default function HomePage() {
@@ -11,6 +12,7 @@ export default function HomePage() {
       <HeaderContainer />
       <HeroContainer />
       <ProjectsHContainer />
+      <ExperiencesContainer />
     </>
   );
 }
