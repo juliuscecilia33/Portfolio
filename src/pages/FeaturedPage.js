@@ -3,6 +3,7 @@ import {
   HeaderContainer,
   HeadingContainer,
   ProjectsVContainer,
+  FooterContainer,
 } from "../containers";
 
 export default function HomePage() {
@@ -11,6 +12,7 @@ export default function HomePage() {
       <HeaderContainer bgColor="#F5F1E3" />
       <HeadingContainer bgColor="#F5F1E3" />
       <ProjectsVContainer />
+      <FooterContainer />
     </>
   );
 }

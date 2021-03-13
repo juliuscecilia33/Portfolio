@@ -27,13 +27,14 @@ export const Cards = styled.div`
 
 export const Card = styled.div`
   width: 100%;
-  height: 510px;
+  height: 350px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: ${({ bgColor }) => bgColor};
   box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
   border-radius: 40px;
+  margin-bottom: 3rem;
 `;
 
 export const Image = styled.div`
@@ -45,7 +46,6 @@ export const Image = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 3rem;
 
   img {
     width: 90%;
@@ -54,57 +54,62 @@ export const Image = styled.div`
 `;
 
 export const Text = styled.div`
+  width: 45%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  text-align: center;
+  margin-left: 3rem;
 `;
 
 export const Title = styled.div`
   display: flex;
   align-items: center;
+  margin-bottom: 0.4rem;
 
   h2 {
-    font-size: 3.3rem;
+    font-size: 3rem;
     font-weight: 800;
     color: #463f3a;
     margin-right: 0.7rem;
   }
 
   i {
-    font-size: 37px;
+    font-size: 27px;
     color: #e0afa0;
-    margin-right: 0.5rem;
+    margin-right: 1rem;
   }
 `;
 
 export const Description = styled.p`
-  font-size: 22px;
+  width: 90%;
+  font-size: 1rem;
   font-weight: 400;
   color: #8a817c;
+  margin-bottom: 0.7rem;
+  line-height: 25px;
 `;
 
 export const Link = styled.h3`
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 500;
   color: #8a817c;
 
   span {
     color: #e0afa0;
   }
+
+  margin-bottom: 2rem;
 `;
 
 export const Hashtags = styled.div`
+  width: 95%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
 `;
 
 export const Hashtag = styled.div`
-  height: 36px;
-  padding: 0 7px;
+  height: 28px;
+  padding: 0 1.5rem;
   background: linear-gradient(
     130.16deg,
     #e0afa0 9.59%,
@@ -112,5 +117,10 @@ export const Hashtag = styled.div`
   );
   border-radius: 50px;
   color: #f4f3ee;
-  font-weight: 700;
+  font-size: 0.8rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.2rem;
 `;
