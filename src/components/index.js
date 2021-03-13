@@ -6,3 +6,4 @@ export { default as ProjectsV } from "./ProjectsV";
 export { default as Experiences } from "./Experiences";
 export { default as Footer } from "./Footer";
 export { default as Text } from "./Text";
+export { default as Image } from "./Image";

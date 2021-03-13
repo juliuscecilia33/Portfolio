@@ -20,3 +20,9 @@ export const Description = styled.p`
   line-height: 40px;
   color: #463f3a;
 `;
+
+export const Message = styled.p`
+  font-size: 18px;
+  font-weight: 400;
+  color: #8a817c;
+`;
