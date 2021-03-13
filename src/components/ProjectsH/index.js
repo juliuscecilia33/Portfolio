@@ -9,7 +9,7 @@ import {
   Text,
   Title,
   Description,
-} from "./styles/projectsh";
+} from "./styles/projectsH";
 
 export default function ProjectsH({ children, ...restProps }) {
   return <Container {...restProps}>{children}</Container>;

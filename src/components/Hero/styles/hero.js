@@ -5,7 +5,7 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 15%;
+  padding: 0 20%;
   margin-top: 3rem;
 `;
 
@@ -17,7 +17,7 @@ export const Text = styled.div`
 `;
 
 export const Title = styled.h2`
-  font-size: 5.3rem;
+  font-size: 4.7rem;
   font-weight: 700;
   color: #463f3a;
   text-align: left;
@@ -30,11 +30,11 @@ export const Title = styled.h2`
 
 export const Description = styled.p`
   width: 80%;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 500;
   color: #bcb8b1;
   text-align: left;
-  line-height: 31px;
+  line-height: 30px;
 
   span {
     color: #8a817c;
@@ -42,7 +42,7 @@ export const Description = styled.p`
 `;
 
 export const Image = styled.div`
-  width: 50%;
+  width: 60%;
   display: flex;
   justify-content: center;
 

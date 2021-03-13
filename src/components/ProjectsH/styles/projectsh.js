@@ -3,14 +3,18 @@ import styled from "styled-components/macro";
 export const Container = styled.div`
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  padding: 0 15%;
+  align-items: center;
+  padding: 0 20%;
+  margin-top: 8rem;
 `;
 
 export const Header = styled.h2`
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-weight: 700;
   color: #e0afa0;
+  margin-bottom: 2rem;
 `;
 
 export const Cards = styled.div`
@@ -20,27 +24,33 @@ export const Cards = styled.div`
   align-items: center;
 `;
 
-export const Card = styled.div`
-  width: 650px;
-  height: 775px;
+export const Card = styled.a`
+  width: 465px;
+  height: 600px;
+  background-color: ${({ bgColor }) => bgColor};
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
+  border-radius: 40px;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+  padding: 1rem 1.5rem;
+  margin: 2rem;
+  cursor: pointer;
 `;
 
 export const Image = styled.div`
-  width: 560px;
-  height: 430px;
+  width: 423px;
+  height: 325px;
   background: #f4f3ee;
   box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
   border-radius: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 3rem;
 
   img {
-    width: 555px;
+    width: 90%;
     height: auto;
   }
 `;
@@ -54,13 +64,16 @@ export const Text = styled.div`
 `;
 
 export const Title = styled.h3`
-  font-weight: 700;
-  font-size: 3.5rem;
+  font-weight: 800;
+  font-size: 2.5rem;
   color: #463f3a;
+  margin-bottom: 0.5rem;
 `;
 
 export const Description = styled.p`
-  font-size: 25px;
-  font-weight: 500;
+  width: 90%;
+  font-size: 1.2rem;
+  font-weight: 400;
   color: #8a817c;
+  line-height: 25px;
 `;

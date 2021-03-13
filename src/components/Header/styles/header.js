@@ -7,7 +7,7 @@ export const Container = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 15%;
+  padding: 0 20%;
 `;
 
 export const Links = styled.div`
@@ -18,7 +18,7 @@ export const Links = styled.div`
 `;
 
 export const Link = styled.h3`
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
   color: #bcb8b1;
   transition: all 0.5s ease;
@@ -37,7 +37,7 @@ export const Icons = styled.div`
 
 export const Icon = styled.div`
   i {
-    font-size: 32px;
+    font-size: 28px;
     color: #e0afa0;
   }
 `;
