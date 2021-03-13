@@ -17,70 +17,68 @@ export const Header = styled.h2`
   margin-bottom: 1rem;
 `;
 
-export const Message = styled.p`
-  font-size: 1rem;
-  font-weight: 400;
-  color: #bcb8b1;
-  margin-bottom: 2rem;
-`;
-
 export const Cards = styled.div`
+  width: 100%;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 `;
 
-export const Card = styled.a`
-  width: 425px;
-  height: 580px;
-  background-color: ${({ bgColor }) => bgColor};
+export const Card = styled.div`
+  width: 100%;
+  height: 465px;
+  background: #f4f3ee;
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  border-radius: 40px;
-  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
-  padding: 1rem 1rem;
-  margin: 2rem;
-  cursor: pointer;
 `;
 
 export const Image = styled.div`
-  width: 370px;
-  height: 285px;
-  background: #f4f3ee;
-  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
-  border-radius: 40px;
+  width: 20%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 3rem;
 
   img {
-    width: 90%;
+    width: 320px;
     height: auto;
   }
 `;
 
 export const Text = styled.div`
+  width: 80%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  text-align: left;
   align-items: center;
-  text-align: center;
 `;
 
-export const Title = styled.h3`
+export const Title = styled.h2`
+  font-size: 4rem;
   font-weight: 800;
-  font-size: 2.5rem;
   color: #463f3a;
-  margin-bottom: 0.5rem;
+  margin-bottom: 5px;
+`;
+
+export const Date = styled.p`
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #e0afa0;
+  margin-bottom: 5px;
+`;
+
+export const Location = styled.p`
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #8a817c;
+  margin-bottom: 0.8rem;
 `;
 
 export const Description = styled.p`
-  width: 90%;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 400;
   color: #8a817c;
-  line-height: 25px;
 `;
