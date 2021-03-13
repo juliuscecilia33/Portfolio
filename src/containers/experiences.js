@@ -11,9 +11,7 @@ export function ExperiencesContainer() {
             title="Frontend Developer"
             date="Jan. 2021 - Present"
             location="Seattle, Washington"
-            description="I am a Front-End Developer for a Business RSO at UW that is creating a centralized, web-based platform to identify and promote small, sustainable businesses. We are using React.js to create an interactive UI for businesses that apply for our website
-and will also be utilizing Google Firebase to help store the data for the users and create a dynamic
-interface customized for each business."
+            description="I am a Front-End Developer for a Business RSO at UW that is creating a centralized, web-based platform to identify and promote small, sustainable businesses. We are using React.js to create an interactive UI and will also be utilizing Google Firebase to help store the data for each business."
             src="ReThinkLogo"
           />
           <Experiences.Card
