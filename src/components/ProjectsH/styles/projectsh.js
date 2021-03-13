@@ -31,7 +31,7 @@ export const Cards = styled.div`
   align-items: center;
 `;
 
-export const Card = styled.a`
+export const Card = styled.div`
   width: 425px;
   height: 580px;
   background-color: ${({ bgColor }) => bgColor};
