@@ -3,7 +3,6 @@ import { Link as ReactRouterLink } from "react-router-dom";
 
 import {
   Container,
-  Links,
   Message,
   Cards,
   Card,
@@ -23,10 +22,6 @@ export default function ProjectsV({ bgColor, children, ...restProps }) {
     </Container>
   );
 }
-
-ProjectsV.Links = function ProjectsVLinks({ children, ...restProps }) {
-  return <Links {...restProps}>{children}</Links>;
-};
 
 ProjectsV.Message = function ProjectsVMessage({ children, ...restProps }) {
   return <Message {...restProps}>{children}</Message>;
