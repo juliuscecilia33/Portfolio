@@ -1,10 +1,10 @@
 import React from "react";
 import { Heading } from "../components";
 
-export function HeadingContainer({ bgColor }) {
+export function HeadingContainer({ height, bgColor }) {
   return (
     <>
-      <Heading bgColor={bgColor}>
+      <Heading height={height} bgColor={bgColor}>
         <Heading.Title>Featured Projects</Heading.Title>
         <Heading.Description>
           These are projects I have worked on that are either personally
