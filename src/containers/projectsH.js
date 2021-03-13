@@ -6,6 +6,9 @@ export function ProjectsHContainer() {
     <>
       <ProjectsH>
         <ProjectsH.Header>Featured Projects</ProjectsH.Header>
+        <ProjectsH.Message>
+          Click on a project card to get a detailed overview of it!
+        </ProjectsH.Message>
         <ProjectsH.Cards>
           <ProjectsH.Card
             src="InstaDeck"

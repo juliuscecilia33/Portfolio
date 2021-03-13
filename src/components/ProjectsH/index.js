@@ -3,6 +3,7 @@ import React from "react";
 import {
   Container,
   Header,
+  Message,
   Cards,
   Card,
   Image,
@@ -17,6 +18,10 @@ export default function ProjectsH({ children, ...restProps }) {
 
 ProjectsH.Header = function ProjectsHHeader({ children, ...restProps }) {
   return <Header {...restProps}>{children}</Header>;
+};
+
+ProjectsH.Message = function ProjectsHMessage({ children, ...restProps }) {
+  return <Message {...restProps}>{children}</Message>;
 };
 
 ProjectsH.Cards = function ProjectsHCards({ children, ...restProps }) {

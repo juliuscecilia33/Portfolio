@@ -6,7 +6,7 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   padding: 0 20%;
-  margin-top: 3rem;
+  margin-top: 5rem;
 `;
 
 export const Text = styled.div`
@@ -17,7 +17,7 @@ export const Text = styled.div`
 `;
 
 export const Title = styled.h2`
-  font-size: 4.7rem;
+  font-size: 4.3rem;
   font-weight: 700;
   color: #463f3a;
   text-align: left;
@@ -30,7 +30,7 @@ export const Title = styled.h2`
 
 export const Description = styled.p`
   width: 80%;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 500;
   color: #bcb8b1;
   text-align: left;

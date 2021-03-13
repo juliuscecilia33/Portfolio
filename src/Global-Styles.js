@@ -22,6 +22,18 @@ export const GlobalStyles = createGlobalStyle`
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         transition: all 0.50s linear;
+
+        &::-webkit-scrollbar {
+            width: 12px;
+            background-color: #f6f6f2;
+
+            border-radius: 15px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: #c4c4c4;
+            border-radius: 15px;
+        }
     }
 
     ul {

@@ -11,9 +11,16 @@ export const Container = styled.div`
 `;
 
 export const Header = styled.h2`
-  font-size: 2.5rem;
+  font-size: 2.7rem;
   font-weight: 700;
   color: #e0afa0;
+  margin-bottom: 1rem;
+`;
+
+export const Message = styled.p`
+  font-size: 1rem;
+  font-weight: 400;
+  color: #bcb8b1;
   margin-bottom: 2rem;
 `;
 
