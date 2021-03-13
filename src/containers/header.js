@@ -8,7 +8,7 @@ export function HeaderContainer({ bgColor }) {
       <Header bgColor={bgColor}>
         <Header.Links>
           <Header.Link to={ROUTES.HOME}>Home</Header.Link>
-          <Header.Link to={ROUTES.HOME}>Projects</Header.Link>
+          <Header.Link to={ROUTES.FEATURED}>Projects</Header.Link>
           <Header.Link to={ROUTES.HOME}>About</Header.Link>
           <Header.Link to={ROUTES.HOME}>Contact</Header.Link>
         </Header.Links>

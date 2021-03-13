@@ -80,7 +80,7 @@ export const Title = styled.div`
 `;
 
 export const Description = styled.p`
-  font-size: 23px;
+  font-size: 22px;
   font-weight: 400;
   color: #8a817c;
 `;

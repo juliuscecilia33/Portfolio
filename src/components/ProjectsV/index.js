@@ -32,10 +32,7 @@ ProjectsV.Cards = function ProjectsVCards({ children, ...restProps }) {
 };
 
 ProjectsV.Card = function ProjectsVCard({
-  link,
   src,
-  title,
-  description,
   bgColor,
   children,
   ...restProps
@@ -45,18 +42,34 @@ ProjectsV.Card = function ProjectsVCard({
       <Image>
         <img src={`/images/${src}.png`} alt="Card" />
       </Image>
-      <Text>
-        <Title>
-          <h2>{title}</h2>
-          <i class="fab fa-github"></i>
-          <i class="fas fa-link"></i>
-        </Title>
-        <Description>{description}</Description>
-        <Link>{link}</Link>
-        <Hashtags>{children}</Hashtags>
-      </Text>
+      <Text>{children}</Text>
     </Card>
   );
+};
+
+ProjectsV.Description = function ProjectsVDescription({
+  children,
+  ...restProps
+}) {
+  return <Description {...restProps}>{children}</Description>;
+};
+
+ProjectsV.Title = function ProjectsVTitle({ children, ...restProps }) {
+  return (
+    <Title {...restProps}>
+      <h2>{children}</h2>
+      <i class="fab fa-github"></i>
+      <i class="fas fa-link"></i>
+    </Title>
+  );
+};
+
+ProjectsV.Link = function ProjectsVLink({ children, ...restProps }) {
+  return <Link {...restProps}>{children}</Link>;
+};
+
+ProjectsV.Hashtags = function ProjectsVHashtags({ children, ...restProps }) {
+  return <Hashtags {...restProps}>{children}</Hashtags>;
 };
 
 ProjectsV.Hashtag = function ProjectsVHashtag({ children, ...restProps }) {
