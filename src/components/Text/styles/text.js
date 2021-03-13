@@ -10,16 +10,21 @@ export const Container = styled.div`
 
 export const Title = styled.h2`
   font-weight: 800;
-  font-size: 3.3rem;
+  font-size: 3rem;
   color: #e0afa0;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.7rem;
 `;
 
 export const Description = styled.p`
   font-weight: 400;
-  font-size: 2.3rem;
-  line-height: 40px;
+  font-size: 1.2rem;
+  line-height: 30px;
   color: #463f3a;
+
+  span {
+    color: #e0afa0;
+    font-weight: 500;
+  }
 `;
 
 export const Message = styled.p`
