@@ -31,6 +31,5 @@ export const Message = styled.p`
   font-size: 18px;
   font-weight: 400;
   color: #8a817c;
-  margin-bottom: 1rem;
   margin-top: 3rem;
 `;

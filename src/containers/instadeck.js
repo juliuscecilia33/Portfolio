@@ -17,7 +17,7 @@ export function InstaDeckContainer() {
       <Text>
         <Text.Message>Figma mockups made by me!</Text.Message>
       </Text>
-      <Image src="InstaDeckPage1" />
+      <Image src="Pages" />
       <Image src="InstaDeckPage2" />
       <Text>
         <Text.Title>How it started</Text.Title>
