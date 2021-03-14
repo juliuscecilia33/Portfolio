@@ -2,12 +2,12 @@ import styled from "styled-components/macro";
 
 export const Container = styled.div`
   width: 100%;
+  height: 75vh;
   display: flex;
   background-color: #f5ede3;
   justify-content: center;
   align-items: center;
   padding: 0 20%;
-  margin-top: 5rem;
 `;
 
 export const Text = styled.div`
@@ -31,11 +31,11 @@ export const Title = styled.h2`
 
 export const Description = styled.p`
   width: 80%;
-  font-size: 1.3rem;
-  font-weight: 500;
+  font-size: 1.1rem;
+  font-weight: 400;
   color: #bcb8b1;
   text-align: left;
-  line-height: 30px;
+  line-height: 25px;
 
   span {
     color: #8a817c;

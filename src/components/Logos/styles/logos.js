@@ -10,7 +10,7 @@ export const Container = styled.div`
   margin-top: 5rem;
 `;
 
-export const Logos = styled.div`
+export const Contain = styled.div`
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -26,15 +26,16 @@ export const Header = styled.h2`
 `;
 
 export const Logo = styled.div`
-  margin: 1.5rem;
+  margin: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
   img {
-    height: 230px;
+    height: 170px;
     width: auto;
+    margin-bottom: 1rem;
   }
 `;
 

@@ -9,7 +9,7 @@ export function AboutContainer() {
       <ExperiencesContainer />
       <Logos>
         <Logos.Header>Languages/Skills</Logos.Header>
-        <Logos.Logos>
+        <Logos.Contain>
           <Logos.Logo src="React">React</Logos.Logo>
           <Logos.Logo src="Javascript">Javascript</Logos.Logo>
           <Logos.Logo src="ReactNative">React Native</Logos.Logo>
@@ -20,16 +20,16 @@ export function AboutContainer() {
           <Logos.Logo src="AdobeXD">Adobe XD</Logos.Logo>
           <Logos.Logo src="Firebase">Firebase</Logos.Logo>
           <Logos.Logo src="HTML">HTML</Logos.Logo>
-        </Logos.Logos>
+        </Logos.Contain>
       </Logos>
       <Logos>
         <Logos.Header>Languages/Skills</Logos.Header>
-        <Logos.Logos>
+        <Logos.Contain>
           <Logos.Logo src="NodeJS">NodeJS</Logos.Logo>
           <Logos.Logo src="MongoDB">MongoDB</Logos.Logo>
           <Logos.Logo src="GraphQL">GraphQL</Logos.Logo>
           <Logos.Logo src="TypeORM">TypeORM</Logos.Logo>
-        </Logos.Logos>
+        </Logos.Contain>
       </Logos>
       <Experiences>
         <Experiences.Header>Education</Experiences.Header>

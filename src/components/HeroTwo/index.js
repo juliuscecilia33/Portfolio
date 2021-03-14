@@ -21,7 +21,7 @@ HeroTwo.Description = function HeroTwoDescription({ children, ...restProps }) {
 HeroTwo.Image = function HeroTwoImage({ children, ...restProps }) {
   return (
     <Image {...restProps}>
-      <img src="/images/Avatar.png" alt="Avatar" />
+      <img src="/images/Avatar2.png" alt="Avatar" />
     </Image>
   );
 };
