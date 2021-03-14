@@ -8,3 +8,4 @@ export { HeadingContainer } from "./heading";
 export { InstaDeckContainer } from "./instadeck";
 export { FAOutletsContainer } from "./faoutlets";
 export { CycleScanContainer } from "./cyclescan";
+export { ReThinkContainer } from "./rethink";

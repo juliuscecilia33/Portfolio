@@ -3,3 +3,4 @@ export const PROJECTS = "/projects";
 export const INSTADECK = "/projects/instadeck";
 export const FAOUTLETS = "/projects/faoutlets";
 export const CYCLESCAN = "/projects/cyclescan";
+export const RETHINK = "/projects/rethink";

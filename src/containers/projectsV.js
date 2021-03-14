@@ -74,7 +74,7 @@ export function ProjectsVContainer() {
               <ProjectsV.Hashtag>Google Cloud Vision API</ProjectsV.Hashtag>
             </ProjectsV.Hashtags>
           </ProjectsV.Card>
-          <ProjectsV.Card bgColor="#E3EAF5" src="ReThink">
+          <ProjectsV.Card bgColor="#E3EAF5" src="ReThink" to={ROUTES.RETHINK}>
             <ProjectsV.Title>ReThink</ProjectsV.Title>
             <ProjectsV.Description>
               A centralized, web-based platform to identify and promote small,
