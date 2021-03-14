@@ -9,7 +9,7 @@ export function HeaderContainer({ bgColor }) {
         <Header.Links>
           <Header.Link to={ROUTES.HOME}>Home</Header.Link>
           <Header.Link to={ROUTES.PROJECTS}>Projects</Header.Link>
-          <Header.Link to={ROUTES.HOME}>About</Header.Link>
+          <Header.Link to={ROUTES.ABOUT}>About</Header.Link>
           <Header.Link to={ROUTES.HOME}>Contact</Header.Link>
         </Header.Links>
         <Header.Icons>

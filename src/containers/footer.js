@@ -9,7 +9,7 @@ export function FooterContainer() {
         <Footer.Links>
           <Footer.Link to={ROUTES.HOME}>Home</Footer.Link>
           <Footer.Link to={ROUTES.PROJECTS}>Projects</Footer.Link>
-          <Footer.Link to={ROUTES.HOME}>About</Footer.Link>
+          <Footer.Link to={ROUTES.ABOUT}>About</Footer.Link>
           <Footer.Link to={ROUTES.HOME}>Contact</Footer.Link>
         </Footer.Links>
         <Footer.Icons>
