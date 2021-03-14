@@ -1,7 +1,7 @@
 import React from "react";
 import { HeroTwo } from "../components";
 
-export function HeroContainer() {
+export function HeroTwoContainer() {
   return (
     <>
       <HeroTwo>
