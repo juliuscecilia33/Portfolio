@@ -9,3 +9,4 @@ export { InstaDeckContainer } from "./instadeck";
 export { FAOutletsContainer } from "./faoutlets";
 export { CycleScanContainer } from "./cyclescan";
 export { ReThinkContainer } from "./rethink";
+export { AboutContainer } from "./about";

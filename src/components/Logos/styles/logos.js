@@ -18,7 +18,7 @@ export const Logo = styled.div`
   align-items: center;
 
   img {
-    height: 260px;
+    height: 230px;
     width: auto;
   }
 `;

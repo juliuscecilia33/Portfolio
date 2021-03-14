@@ -8,3 +8,4 @@ export { default as Footer } from "./Footer";
 export { default as Text } from "./Text";
 export { default as Image } from "./Image";
 export { default as HeroTwo } from "./HeroTwo";
+export { default as Logos } from "./Logos";
