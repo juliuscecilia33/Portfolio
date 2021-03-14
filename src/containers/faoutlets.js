@@ -70,6 +70,26 @@ export function FAOutletsContainer() {
           someone with food allergies.
         </Text.Description>
       </Text>
+      <ProjectsV>
+        <ProjectsV.Cards>
+          <ProjectsV.Card bgColor="#E3F2F5" src="FAOutlets">
+            <ProjectsV.Title>FAOutlets</ProjectsV.Title>
+            <ProjectsV.Description>
+              An E-commerce Store that combines all Food Allergy manufacturers
+              and products into one online hub!
+            </ProjectsV.Description>
+            <ProjectsV.Link>
+              Check it out here: <span>faoutlets.netlify.app</span>
+            </ProjectsV.Link>
+            <ProjectsV.Hashtags>
+              <ProjectsV.Hashtag>React.js</ProjectsV.Hashtag>
+              <ProjectsV.Hashtag>Styled-Components</ProjectsV.Hashtag>
+              <ProjectsV.Hashtag>Stripe</ProjectsV.Hashtag>
+              <ProjectsV.Hashtag>Commerce.js</ProjectsV.Hashtag>
+            </ProjectsV.Hashtags>
+          </ProjectsV.Card>
+        </ProjectsV.Cards>
+      </ProjectsV>
     </>
   );
 }

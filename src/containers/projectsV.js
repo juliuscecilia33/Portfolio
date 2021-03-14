@@ -29,7 +29,11 @@ export function ProjectsVContainer() {
               <ProjectsV.Hashtag>Firebase</ProjectsV.Hashtag>
             </ProjectsV.Hashtags>
           </ProjectsV.Card>
-          <ProjectsV.Card bgColor="#E3F2F5" src="FAOutlets">
+          <ProjectsV.Card
+            bgColor="#E3F2F5"
+            src="FAOutlets"
+            to={ROUTES.FAOUTLETS}
+          >
             <ProjectsV.Title>FAOutlets</ProjectsV.Title>
             <ProjectsV.Description>
               An E-commerce Store that combines all Food Allergy manufacturers
