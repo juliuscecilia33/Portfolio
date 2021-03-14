@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Container } from "./styles/image";
+import { Container, Logos, Logo, Teams, Team, Text } from "./styles/image";
 
 export default function Image({ src, children, ...restProps }) {
   return (
@@ -9,3 +9,28 @@ export default function Image({ src, children, ...restProps }) {
     </Container>
   );
 }
+
+Image.Logos = function ImageLogos({ children, ...restProps }) {
+  return <Logos {...restProps}>{children}</Logos>;
+};
+
+Image.Logo = function ImageLogo({ src, children, ...restProps }) {
+  return (
+    <Logo {...restProps}>
+      <img src={`/images/${src}.png`} alt="Card" />
+    </Logo>
+  );
+};
+
+Image.Teams = function ImageTeams({ children, ...restProps }) {
+  return <Teams {...restProps}>{children}</Teams>;
+};
+
+Image.Team = function ImageTeam({ src, children, ...restProps }) {
+  return (
+    <Team {...restProps}>
+      <img src={`/images/${src}.png`} alt="Card" />
+      <Text>{children}</Text>
+    </Team>
+  );
+};
