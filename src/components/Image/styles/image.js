@@ -22,11 +22,12 @@ export const Logos = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding: 0 20%;
 `;
 
 export const Logo = styled.div`
   img {
-    height: 320px;
+    height: 300px;
     width: auto;
   }
 `;
@@ -36,6 +37,7 @@ export const Teams = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding: 0 20%;
 `;
 
 export const Team = styled.div`
@@ -46,12 +48,13 @@ export const Team = styled.div`
 
   img {
     width: auto;
-    height: 292px;
+    height: 230px;
+    margin-bottom: 1rem;
   }
 `;
 
 export const Text = styled.h2`
-  font-size: 22px;
+  font-size: 16px;
   font-weight: 500;
   color: #463f3a;
 `;

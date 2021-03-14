@@ -17,7 +17,7 @@ Image.Logos = function ImageLogos({ children, ...restProps }) {
 Image.Logo = function ImageLogo({ src, children, ...restProps }) {
   return (
     <Logo {...restProps}>
-      <img src={`/images/${src}.png`} alt="Card" />
+      <img src={`/images/${src}.png`} alt="Logo" />
     </Logo>
   );
 };
@@ -29,7 +29,7 @@ Image.Teams = function ImageTeams({ children, ...restProps }) {
 Image.Team = function ImageTeam({ src, children, ...restProps }) {
   return (
     <Team {...restProps}>
-      <img src={`/images/${src}.png`} alt="Card" />
+      <img src={`/images/${src}.png`} alt="Team Profile" />
       <Text>{children}</Text>
     </Team>
   );

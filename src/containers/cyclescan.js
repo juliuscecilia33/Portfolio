@@ -16,24 +16,20 @@ export function CycleScanContainer() {
           definitely something to be proud of!
         </Text.Description>
       </Text>
-      <Image>
-        <Image.Logos>
-          <Image.Logo src="MLH" />
-          <Image.Logo src="SDHacks" />
-          <Image.Logo src="Pinnacle" />
-        </Image.Logos>
-      </Image>
+      <Image.Logos>
+        <Image.Logo src="MLH" />
+        <Image.Logo src="SDHacks" />
+        <Image.Logo src="Pinnacle" />
+      </Image.Logos>
       <Text>
         <Text.Title>Meet my team</Text.Title>
       </Text>
-      <Image>
-        <Image.Teams>
-          <Image.Team src="Hussain">Hussain</Image.Team>
-          <Image.Team src="Kimberly">Kimberly</Image.Team>
-          <Image.Team src="Kenza">Kenza</Image.Team>
-          <Image.Team src="Me">Me</Image.Team>
-        </Image.Teams>
-      </Image>
+      <Image.Teams>
+        <Image.Team src="Hussain">Hussain</Image.Team>
+        <Image.Team src="Kimberly">Kimberly</Image.Team>
+        <Image.Team src="Kenza">Kenza</Image.Team>
+        <Image.Team src="Me">Me</Image.Team>
+      </Image.Teams>
       <Text>
         <Text.Title>About</Text.Title>
         <Text.Description>
@@ -46,15 +42,9 @@ export function CycleScanContainer() {
         </Text.Description>
       </Text>
       <Text>
-        <Text.Message>Figma mockups made by me!</Text.Message>
+        <Text.Message>Figma mockups made by me and Hussain!</Text.Message>
       </Text>
       <Image src="CycleScanPages" />
-      <iframe
-        title="Video"
-        width="420"
-        height="315"
-        src="https://www.youtube.com/watch?v=VcX_k6jmEIQ"
-      ></iframe>
       <Text>
         <Text.Title>Contributions</Text.Title>
         <Text.Description>
@@ -91,25 +81,32 @@ export function CycleScanContainer() {
           to get even better each day!
         </Text.Description>
       </Text>
-      <ProjectsV.Card bgColor="#E6F5E3;" src="CycleScan" to={ROUTES.CYCLESCAN}>
-        <ProjectsV.Title>CycleScan</ProjectsV.Title>
-        <ProjectsV.Description>
-          Cross-platform mobile application that determines whether an object is
-          recyclable, compostable or neither using object recognition.
-        </ProjectsV.Description>
-        <ProjectsV.Link>
-          Check it out here: <span>https://devpost.com/software/cyclescan</span>
-        </ProjectsV.Link>
-        <ProjectsV.Hashtags>
-          <ProjectsV.Hashtag>React Native</ProjectsV.Hashtag>
-          <ProjectsV.Hashtag>Typescript</ProjectsV.Hashtag>
-          <ProjectsV.Hashtag>Firebase</ProjectsV.Hashtag>
-          <ProjectsV.Hashtag>Javascript</ProjectsV.Hashtag>
-          <ProjectsV.Hashtag>Python</ProjectsV.Hashtag>
-          <ProjectsV.Hashtag>Flask</ProjectsV.Hashtag>
-          <ProjectsV.Hashtag>Google Cloud Vision API</ProjectsV.Hashtag>
-        </ProjectsV.Hashtags>
-      </ProjectsV.Card>
+      <ProjectsV>
+        <ProjectsV.Card
+          bgColor="#E6F5E3;"
+          src="CycleScan"
+          to={ROUTES.CYCLESCAN}
+        >
+          <ProjectsV.Title>CycleScan</ProjectsV.Title>
+          <ProjectsV.Description>
+            Cross-platform mobile application that determines whether an object
+            is recyclable, compostable or neither using object recognition.
+          </ProjectsV.Description>
+          <ProjectsV.Link>
+            Check it out here:{" "}
+            <span>https://devpost.com/software/cyclescan</span>
+          </ProjectsV.Link>
+          <ProjectsV.Hashtags>
+            <ProjectsV.Hashtag>React Native</ProjectsV.Hashtag>
+            <ProjectsV.Hashtag>Typescript</ProjectsV.Hashtag>
+            <ProjectsV.Hashtag>Firebase</ProjectsV.Hashtag>
+            <ProjectsV.Hashtag>Javascript</ProjectsV.Hashtag>
+            <ProjectsV.Hashtag>Python</ProjectsV.Hashtag>
+            <ProjectsV.Hashtag>Flask</ProjectsV.Hashtag>
+            <ProjectsV.Hashtag>Google Cloud Vision API</ProjectsV.Hashtag>
+          </ProjectsV.Hashtags>
+        </ProjectsV.Card>
+      </ProjectsV>
     </>
   );
 }
