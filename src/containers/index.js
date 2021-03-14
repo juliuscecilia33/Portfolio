@@ -7,3 +7,4 @@ export { FooterContainer } from "./footer";
 export { HeadingContainer } from "./heading";
 export { InstaDeckContainer } from "./instadeck";
 export { FAOutletsContainer } from "./faoutlets";
+export { CycleScanContainer } from "./cyclescan";

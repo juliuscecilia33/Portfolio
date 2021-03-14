@@ -16,3 +16,42 @@ export const Container = styled.div`
     border-radius: 20px;
   }
 `;
+
+export const Logos = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+`;
+
+export const Logo = styled.div`
+  img {
+    height: 320px;
+    width: auto;
+  }
+`;
+
+export const Teams = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+`;
+
+export const Team = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: auto;
+    height: 292px;
+  }
+`;
+
+export const Text = styled.h2`
+  font-size: 22px;
+  font-weight: 500;
+  color: #463f3a;
+`;

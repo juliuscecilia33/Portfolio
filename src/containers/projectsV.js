@@ -49,7 +49,11 @@ export function ProjectsVContainer() {
               <ProjectsV.Hashtag>Commerce.js</ProjectsV.Hashtag>
             </ProjectsV.Hashtags>
           </ProjectsV.Card>
-          <ProjectsV.Card bgColor="#E6F5E3;" src="CycleScan">
+          <ProjectsV.Card
+            bgColor="#E6F5E3;"
+            src="CycleScan"
+            to={ROUTES.CYCLESCAN}
+          >
             <ProjectsV.Title>CycleScan</ProjectsV.Title>
             <ProjectsV.Description>
               Cross-platform mobile application that determines whether an
