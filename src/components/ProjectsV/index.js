@@ -32,18 +32,21 @@ ProjectsV.Cards = function ProjectsVCards({ children, ...restProps }) {
 };
 
 ProjectsV.Card = function ProjectsVCard({
+  to,
   src,
   bgColor,
   children,
   ...restProps
 }) {
   return (
-    <Card bgColor={bgColor} {...restProps}>
-      <Image>
-        <img src={`/images/${src}.png`} alt="Card" />
-      </Image>
-      <Text>{children}</Text>
-    </Card>
+    <ReactRouterLink to={to}>
+      <Card bgColor={bgColor} {...restProps}>
+        <Image>
+          <img src={`/images/${src}.png`} alt="Card" />
+        </Image>
+        <Text>{children}</Text>
+      </Card>
+    </ReactRouterLink>
   );
 };
 

@@ -10,7 +10,11 @@ export function ProjectsVContainer() {
           Click on a project card to get a detailed overview of it!
         </ProjectsV.Message>
         <ProjectsV.Cards>
-          <ProjectsV.Card bgColor="#F5E9E3" src="InstaDeck">
+          <ProjectsV.Card
+            bgColor="#F5E9E3"
+            src="InstaDeck"
+            to={ROUTES.INSTADECK}
+          >
             <ProjectsV.Title>InstaDeck</ProjectsV.Title>
             <ProjectsV.Description>
               A semi-dashboard interface of Instagram made with React and

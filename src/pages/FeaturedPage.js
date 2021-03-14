@@ -7,7 +7,7 @@ import {
   FooterContainer,
 } from "../containers";
 
-export default function HomePage() {
+export default function FeaturedPage() {
   return (
     <>
       <HeaderContainer bgColor="#F5F1E3" />

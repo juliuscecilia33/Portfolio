@@ -7,13 +7,13 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   padding: 0 20%;
-  margin-top: 5rem;
 `;
 
 export const Message = styled.p`
   font-size: 1rem;
   font-weight: 400;
   color: #bcb8b1;
+  margin-top: 5rem;
   margin-bottom: 3rem;
 `;
 
@@ -23,6 +23,10 @@ export const Cards = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  a {
+    width: 100%;
+  }
 `;
 
 export const Card = styled.div`
@@ -35,6 +39,7 @@ export const Card = styled.div`
   box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
   border-radius: 40px;
   margin-bottom: 3rem;
+  cursor: pointer;
 `;
 
 export const Image = styled.div`

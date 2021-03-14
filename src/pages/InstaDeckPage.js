@@ -7,11 +7,11 @@ import {
   FooterContainer,
 } from "../containers";
 
-export default function HomePage() {
+export default function InstaDeckPage() {
   return (
     <>
       <HeaderContainer bgColor="#F5E9E3" />
-      <HeadingContainer height="45vh" bgColor="#F5E9E3">
+      <HeadingContainer height="55vh" bgColor="#F5E9E3">
         <ProjectsV>
           <ProjectsV.Cards>
             <ProjectsV.Card bgColor="#F4F3EE" src="InstaDeck">
