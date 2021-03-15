@@ -5,3 +5,4 @@ export { default as FAOutletsPage } from "./FAOutletsPage";
 export { default as CycleScanPage } from "./CycleScanPage";
 export { default as ReThinkPage } from "./ReThinkPage";
 export { default as AboutPage } from "./AboutPage";
+export { default as BeeehivePage } from "./BeeehivePage";

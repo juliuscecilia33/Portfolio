@@ -35,6 +35,7 @@ export const Logo = styled.div`
 export const Teams = styled.div`
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   padding: 0 20%;
@@ -45,6 +46,7 @@ export const Team = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 1rem;
 
   img {
     width: auto;
