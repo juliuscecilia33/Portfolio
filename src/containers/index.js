@@ -11,3 +11,4 @@ export { CycleScanContainer } from "./cyclescan";
 export { ReThinkContainer } from "./rethink";
 export { AboutContainer } from "./about";
 export { HeroTwoContainer } from "./heroTwo";
+export { BeeehiveContainer } from "./beeehive";
