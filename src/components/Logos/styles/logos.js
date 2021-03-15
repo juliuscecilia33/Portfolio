@@ -33,7 +33,7 @@ export const Logo = styled.div`
   align-items: center;
 
   img {
-    height: 170px;
+    height: 150px;
     width: auto;
     margin-bottom: 1rem;
   }

@@ -89,6 +89,24 @@ export function ProjectsVContainer() {
               <ProjectsV.Hashtag>Firebase</ProjectsV.Hashtag>
             </ProjectsV.Hashtags>
           </ProjectsV.Card>
+          <ProjectsV.Card bgColor="#F5F5E3" src="Beeehive" to={ROUTES.BEEEHIVE}>
+            <ProjectsV.Title>Beeehive</ProjectsV.Title>
+            <ProjectsV.Description>
+              Beehive is a website designed to combine communication channels
+              that have become popular in the new age of online learning.
+            </ProjectsV.Description>
+            <ProjectsV.Link>
+              Check it out here:{" "}
+              <span>https://devpost.com/software/beehive</span>
+            </ProjectsV.Link>
+            <ProjectsV.Hashtags>
+              <ProjectsV.Hashtag>React.js</ProjectsV.Hashtag>
+              <ProjectsV.Hashtag>Sass</ProjectsV.Hashtag>
+              <ProjectsV.Hashtag>Socket.io</ProjectsV.Hashtag>
+              <ProjectsV.Hashtag>Express.js</ProjectsV.Hashtag>
+              <ProjectsV.Hashtag>MongoDB-Atlas</ProjectsV.Hashtag>
+            </ProjectsV.Hashtags>
+          </ProjectsV.Card>
         </ProjectsV.Cards>
       </ProjectsV>
     </>

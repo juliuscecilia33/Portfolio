@@ -34,6 +34,12 @@ export function ProjectsHContainer() {
             description="A centralized, web-based platform to identify and promote small, sustainable businesses."
             bgColor="#E3EAF5"
           />
+          <ProjectsH.Card
+            src="Beeehive"
+            title="Beeehive"
+            description="A website designed to combine communication channels that have become popular in the new age of online learning. "
+            bgColor="#F5F5E3"
+          />
         </ProjectsH.Cards>
       </ProjectsH>
     </>
