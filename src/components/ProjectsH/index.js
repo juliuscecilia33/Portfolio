@@ -30,6 +30,7 @@ ProjectsH.Cards = function ProjectsHCards({ children, ...restProps }) {
 };
 
 ProjectsH.Card = function ProjectsHCard({
+  to,
   src,
   title,
   description,
@@ -38,14 +39,16 @@ ProjectsH.Card = function ProjectsHCard({
   ...restProps
 }) {
   return (
-    <Card bgColor={bgColor} {...restProps}>
-      <Image>
-        <img src={`/images/${src}.png`} alt="Card" />
-      </Image>
-      <Text>
-        <Title>{title}</Title>
-        <Description>{description}</Description>
-      </Text>
-    </Card>
+    <ReactRouterLink to={to}>
+      <Card bgColor={bgColor} {...restProps}>
+        <Image>
+          <img src={`/images/${src}.png`} alt="Card" />
+        </Image>
+        <Text>
+          <Title>{title}</Title>
+          <Description>{description}</Description>
+        </Text>
+      </Card>
+    </ReactRouterLink>
   );
 };
