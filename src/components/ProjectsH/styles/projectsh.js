@@ -79,7 +79,7 @@ export const Title = styled.h3`
 
 export const Description = styled.p`
   width: 90%;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 400;
   color: #8a817c;
   line-height: 25px;

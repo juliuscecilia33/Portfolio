@@ -20,15 +20,17 @@ export function AboutContainer() {
           <Logos.Logo src="AdobeXD">Adobe XD</Logos.Logo>
           <Logos.Logo src="Firebase">Firebase</Logos.Logo>
           <Logos.Logo src="HTML">HTML</Logos.Logo>
+          <Logos.Logo src="GraphQL">GraphQL</Logos.Logo>
+          <Logos.Logo src="TailwindCSS">Tailwind CSS</Logos.Logo>
         </Logos.Contain>
       </Logos>
       <Logos>
         <Logos.Header>Languages/Skills</Logos.Header>
         <Logos.Contain>
-          <Logos.Logo src="NodeJS">NodeJS</Logos.Logo>
+          <Logos.Logo src="NodeJS">Node.js</Logos.Logo>
           <Logos.Logo src="MongoDB">MongoDB</Logos.Logo>
-          <Logos.Logo src="GraphQL">GraphQL</Logos.Logo>
           <Logos.Logo src="TypeORM">TypeORM</Logos.Logo>
+          <Logos.Logo src="NextJS">Next.js</Logos.Logo>
         </Logos.Contain>
       </Logos>
       <Experiences>

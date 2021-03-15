@@ -26,7 +26,7 @@ export const Header = styled.h2`
 `;
 
 export const Logo = styled.div`
-  margin: 2rem;
+  margin: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
