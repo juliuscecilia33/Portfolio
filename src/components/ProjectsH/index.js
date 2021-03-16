@@ -11,6 +11,7 @@ import {
   Text,
   Title,
   Description,
+  Button,
 } from "./styles/projectsH";
 
 export default function ProjectsH({ children, ...restProps }) {
@@ -49,6 +50,14 @@ ProjectsH.Card = function ProjectsHCard({
           <Description>{description}</Description>
         </Text>
       </Card>
+    </ReactRouterLink>
+  );
+};
+
+ProjectsH.Button = function ProjectsHButton({ to, children, ...restProps }) {
+  return (
+    <ReactRouterLink to={to}>
+      <Button {...restProps}>{children}</Button>;
     </ReactRouterLink>
   );
 };

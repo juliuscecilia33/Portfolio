@@ -84,3 +84,21 @@ export const Description = styled.p`
   color: #8a817c;
   line-height: 25px;
 `;
+
+export const Button = styled.button`
+  height: 55px;
+  background: linear-gradient(
+    130.16deg,
+    #e0afa0 9.59%,
+    rgba(224, 175, 160, 0.43) 102.85%
+  );
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 20px;
+  color: #f4f3ee;
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2.7rem;
+`;

@@ -39,14 +39,10 @@ export function ProjectsHContainer() {
             bgColor="#E3EAF5"
             to={ROUTES.RETHINK}
           />
-          <ProjectsH.Card
-            src="Beeehive"
-            title="Beeehive"
-            description="A website designed to combine communication channels that have become popular in the new age of online learning. "
-            bgColor="#F5F5E3"
-            to={ROUTES.BEEEHIVE}
-          />
         </ProjectsH.Cards>
+        <ProjectsH.Button to={ROUTES.PROJECTS}>
+          View All Projects
+        </ProjectsH.Button>
       </ProjectsH>
     </>
   );

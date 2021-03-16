@@ -1,4 +1,5 @@
 import React from "react";
+import { Link as ReactRouterLink } from "react-router-dom";
 
 import {
   Container,
@@ -11,6 +12,7 @@ import {
   Date,
   Location,
   Description,
+  Button,
 } from "./styles/experiences";
 
 export default function Experiences({ children, ...restProps }) {
@@ -46,5 +48,17 @@ Experiences.Card = function ExperiencesCard({
         <Description>{description}</Description>
       </Text>
     </Card>
+  );
+};
+
+Experiences.Button = function ExperiencesButton({
+  to,
+  children,
+  ...restProps
+}) {
+  return (
+    <ReactRouterLink to={to}>
+      <Button {...restProps}>{children}</Button>;
+    </ReactRouterLink>
   );
 };
