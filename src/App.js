@@ -1,6 +1,7 @@
 import React from "react";
 import * as ROUTES from "./constants/routes";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import ScrollToTop from "./scrollToTop";
 import {
   HomePage,
   FeaturedPage,
@@ -16,6 +17,7 @@ export default function App() {
   return (
     <>
       <Router>
+        <ScrollToTop />
         <Switch>
           <Route path={ROUTES.HOME} exact>
             <HomePage />

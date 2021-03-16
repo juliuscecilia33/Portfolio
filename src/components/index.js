@@ -9,3 +9,4 @@ export { default as Text } from "./Text";
 export { default as Image } from "./Image";
 export { default as HeroTwo } from "./HeroTwo";
 export { default as Logos } from "./Logos";
+export { default as Contact } from "./Contact";
