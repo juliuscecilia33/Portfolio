@@ -9,14 +9,14 @@ export function ContactContainer({ children, height, bgColor }) {
         <Contact.Card>
           <Contact.Bubble>
             <Contact.Title>Contact Information</Contact.Title>
-            <Contact.Label>
+            <Contact.Labels>
               <i class="fas fa-phone-alt"></i>
               <p>562-332-4687</p>
-            </Contact.Label>
-            <Contact.Label>
+            </Contact.Labels>
+            <Contact.Labels>
               <i class="fas fa-envelope-open-text"></i>
               <p>juliuscecilia33@gmail.com</p>
-            </Contact.Label>
+            </Contact.Labels>
             <Contact.Icons>
               <i class="fab fa-github"></i>
               <i class="fab fa-linkedin"></i>
@@ -33,7 +33,11 @@ export function ContactContainer({ children, height, bgColor }) {
               <Contact.Input width="49%" height="55px" placeholder="Email" />
             </Contact.HalfInputs>
             <Contact.Input width="100%" height="55px" placeholder="Subject" />
-            <Contact.Input width="100%" height="190px" placeholder="Subject" />
+            <Contact.Message
+              width="100%"
+              height="190px"
+              placeholder="Write a message..."
+            />
             <Contact.Button>Send Message</Contact.Button>
           </Contact.Inputs>
         </Contact.Card>

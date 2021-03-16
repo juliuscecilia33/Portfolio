@@ -19,7 +19,7 @@ export const Header = styled.h2`
 
 export const Card = styled.div`
   width: 100%;
-  height: 625px;
+  height: 550px;
   background: #f4f3ee;
   display: flex;
   justify-content: center;
@@ -43,12 +43,14 @@ export const Bubble = styled.div`
     rgba(224, 175, 160, 0.43) 102.85%
   );
   border-radius: 50px;
+  padding: 0 1rem;
 `;
 
 export const Title = styled.h3`
   font-weight: 700;
   font-size: 32px;
   color: #f4f3ee;
+  margin-bottom: 2.5rem;
 `;
 
 export const Description = styled.p`
@@ -97,34 +99,59 @@ export const Input = styled.div`
   }
 `;
 
-export const Label = styled.div`
+export const Message = styled.div`
+  width: ${({ width }) => width};
+  margin: 0.8rem 0;
+
+  textarea {
+    width: 100%;
+    height: 190px;
+    background: #f4f3ee;
+    border: 3px solid #e0afa0;
+    border-radius: 25px;
+    outline: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    color: #e0afa0;
+    filter: drop-shadow(4px 7px 9px rgba(0, 0, 0, 0.25));
+    padding: 1.2rem;
+  }
+
+  &::placeholder {
+    color: #00cc92;
+  }
+`;
+
+export const Labels = styled.div`
   display: flex;
-  justify-content: center;
   align-items: center;
   width: 100%;
+  margin-bottom: 1rem;
+  padding: 0 1.5rem;
 
   i {
-    font-size: 36px;
+    font-size: 28px;
     color: #f4f3ee;
     margin-right: 1rem;
   }
 
   p {
     font-weight: 500;
-    font-size: 18px;
+    font-size: 16px;
     color: #f4f3ee;
   }
 `;
 
 export const Icons = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  width: 100%;
+  margin-top: 2.5rem;
 
   i {
     font-size: 28px;
     color: #f4f3ee;
-    margin-right: 1rem;
   }
 `;
 

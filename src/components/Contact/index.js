@@ -8,11 +8,12 @@ import {
   Input,
   Bubble,
   Title,
-  Label,
   Icons,
   Description,
   HalfInputs,
   Button,
+  Message,
+  Labels,
 } from "./styles/contact";
 
 export default function Contact({ children, ...restProps }) {
@@ -61,12 +62,25 @@ Contact.Input = function ContactInput({
   );
 };
 
-Contact.Label = function ContactLabel({ children, ...restProps }) {
-  return <Label {...restProps}></Label>;
+Contact.Message = function ContactMessage({
+  width,
+  placeholder,
+  children,
+  ...restProps
+}) {
+  return (
+    <Message width={width} {...restProps}>
+      <textarea placeholder={placeholder} />
+    </Message>
+  );
 };
 
 Contact.Icons = function ContactIcons({ children, ...restProps }) {
-  return <Icons {...restProps}></Icons>;
+  return <Icons {...restProps}>{children}</Icons>;
+};
+
+Contact.Labels = function ContactLabels({ children, ...restProps }) {
+  return <Labels {...restProps}>{children}</Labels>;
 };
 
 Contact.Button = function ContactButton({ children, ...restProps }) {
