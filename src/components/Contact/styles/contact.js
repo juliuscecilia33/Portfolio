@@ -60,7 +60,7 @@ export const Description = styled.p`
   margin-bottom: 1rem;
 `;
 
-export const Inputs = styled.div`
+export const Inputs = styled.form`
   width: 70%;
   height: 100%;
   display: flex;

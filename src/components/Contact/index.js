@@ -49,6 +49,7 @@ Contact.HalfInputs = function ContactHalfInputs({ children, ...restProps }) {
 };
 
 Contact.Input = function ContactInput({
+  name,
   type,
   width,
   height,
@@ -58,7 +59,7 @@ Contact.Input = function ContactInput({
 }) {
   return (
     <Input width={width} height={height} {...restProps}>
-      <input type={type} placeholder={placeholder} />
+      <input name={name} type={type} placeholder={placeholder} />
     </Input>
   );
 };
