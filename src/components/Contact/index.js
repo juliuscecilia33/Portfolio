@@ -6,12 +6,12 @@ import {
   Header,
   Inputs,
   Input,
-  Message,
   Bubble,
   Title,
   Label,
   Icons,
   Description,
+  HalfInputs,
   Button,
 } from "./styles/contact";
 
@@ -43,16 +43,20 @@ Contact.Inputs = function ContactInputs({ children, ...restProps }) {
   return <Inputs {...restProps}>{children}</Inputs>;
 };
 
+Contact.HalfInputs = function ContactHalfInputs({ children, ...restProps }) {
+  return <HalfInputs {...restProps}>{children}</HalfInputs>;
+};
+
 Contact.Input = function ContactInput({
+  width,
   height,
   placeholder,
-  width,
   children,
   ...restProps
 }) {
   return (
-    <Input height={height} width={width} {...restProps}>
-      <textarea placeholder={placeholder} />
+    <Input width={width} height={height} {...restProps}>
+      <input placeholder={placeholder} />
     </Input>
   );
 };

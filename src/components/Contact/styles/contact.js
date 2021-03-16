@@ -7,7 +7,7 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   padding: 0 20%;
-  margin-top: 5rem;
+  margin-top: 10rem;
 `;
 
 export const Header = styled.h2`
@@ -27,12 +27,12 @@ export const Card = styled.div`
   box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
   margin-bottom: 4rem;
   border-radius: 50px;
-  padding: 0 2rem;
+  padding: 0 1rem;
 `;
 
 export const Bubble = styled.div`
   width: 30%;
-  height: 97%;
+  height: 95%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -55,6 +55,7 @@ export const Description = styled.p`
   font-size: 18px;
   font-weight: 400;
   color: #8a817c;
+  margin-bottom: 1rem;
 `;
 
 export const Inputs = styled.div`
@@ -64,11 +65,22 @@ export const Inputs = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0 2rem;
+`;
+
+export const HalfInputs = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 `;
 
 export const Input = styled.div`
-  textarea {
-    width: ${({ width }) => width};
+  width: ${({ width }) => width};
+  margin: 0.8rem 0;
+
+  input {
+    width: 100%;
     height: ${({ height }) => height};
     background: #f4f3ee;
     border: 3px solid #e0afa0;
@@ -89,6 +101,7 @@ export const Label = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 
   i {
     font-size: 36px;
@@ -116,7 +129,7 @@ export const Icons = styled.div`
 `;
 
 export const Button = styled.button`
-  height: 45px;
+  height: 43px;
   background: linear-gradient(
     130.16deg,
     #e0afa0 9.59%,
@@ -124,8 +137,10 @@ export const Button = styled.button`
   );
   border-radius: 50px;
   color: #f4f3ee;
-  padding: 0 1.5rem;
+  padding: 0 1.7rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-weight: 600;
+  margin-top: 1rem;
 `;

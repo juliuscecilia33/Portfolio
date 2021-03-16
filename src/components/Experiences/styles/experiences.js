@@ -100,7 +100,6 @@ export const Button = styled.button`
   font-weight: 600;
   font-size: 20px;
   color: #f4f3ee;
-  margin-top: 2.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
