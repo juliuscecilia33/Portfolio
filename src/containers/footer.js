@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { Footer } from "../components";
 import * as ROUTES from "../constants/routes";
 import { CopyToClipboard } from "react-copy-to-clipboard";
+import { Alert } from "@material-ui/lab";
 
 export function FooterContainer() {
+  const [copy, setCopy] = useState(false);
+
   return (
     <>
       <Footer bgColor="#F4F3EE">
@@ -43,12 +46,15 @@ export function FooterContainer() {
           </Footer.Icon>
           <Footer.Icon>
             <CopyToClipboard text="julius!#4803">
-              <button>
+              <button onClick={() => setCopy(true)}>
                 <i class="fab fa-discord"></i>
               </button>
             </CopyToClipboard>
           </Footer.Icon>
         </Footer.Icons>
+        {copy && (
+          <Alert onClose={() => setCopy(false)}>Copied Discord ID!</Alert>
+        )}
       </Footer>
     </>
   );

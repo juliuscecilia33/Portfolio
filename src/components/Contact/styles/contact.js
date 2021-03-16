@@ -168,6 +168,8 @@ export const Button = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Roboto", sans-serif;
   font-weight: 600;
+  font-size: 1rem;
   margin-top: 1rem;
 `;
