@@ -4,7 +4,7 @@ import emailjs from "emailjs-com";
 import { init } from "emailjs-com";
 init("user_dcyLphz3uv8sjix2Ij0ND");
 
-export function ContactContainer({ children, height, bgColor }) {
+export function ContactContainer() {
   function sendEmail(e) {
     e.preventDefault();
 
@@ -77,7 +77,6 @@ export function ContactContainer({ children, height, bgColor }) {
             />
             <Contact.Button type="submit">Send Message</Contact.Button>
           </Contact.Inputs>
-          ;
         </Contact.Card>
       </Contact>
     </>

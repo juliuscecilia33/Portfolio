@@ -11,6 +11,7 @@ import {
   ReThinkPage,
   AboutPage,
   BeeehivePage,
+  ContactPage,
 } from "./pages";
 
 export default function App() {
@@ -56,6 +57,11 @@ export default function App() {
         <Switch>
           <Route path={ROUTES.ABOUT} exact>
             <AboutPage />
+          </Route>
+        </Switch>
+        <Switch>
+          <Route path={ROUTES.CONTACT} exact>
+            <ContactPage />
           </Route>
         </Switch>
       </Router>
