@@ -49,6 +49,7 @@ Contact.HalfInputs = function ContactHalfInputs({ children, ...restProps }) {
 };
 
 Contact.Input = function ContactInput({
+  type,
   width,
   height,
   placeholder,
@@ -57,12 +58,13 @@ Contact.Input = function ContactInput({
 }) {
   return (
     <Input width={width} height={height} {...restProps}>
-      <input placeholder={placeholder} />
+      <input type={type} placeholder={placeholder} />
     </Input>
   );
 };
 
 Contact.Message = function ContactMessage({
+  type,
   width,
   placeholder,
   children,
@@ -70,7 +72,7 @@ Contact.Message = function ContactMessage({
 }) {
   return (
     <Message width={width} {...restProps}>
-      <textarea placeholder={placeholder} />
+      <textarea type={type} placeholder={placeholder} />
     </Message>
   );
 };

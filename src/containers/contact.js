@@ -1,7 +1,28 @@
 import React from "react";
 import { Contact } from "../components";
+import emailjs from "emailjs-com";
 
 export function ContactContainer({ children, height, bgColor }) {
+  function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "gmail",
+        "template_xpmqxfb",
+        e.target,
+        "user_dcyLphz3uv8sjix2Ij0ND"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  }
+
   return (
     <>
       <Contact>
@@ -29,11 +50,27 @@ export function ContactContainer({ children, height, bgColor }) {
               Fill up the form and I will get back to you as soon as I can!
             </Contact.Description>
             <Contact.HalfInputs>
-              <Contact.Input width="49%" height="55px" placeholder="Name" />
-              <Contact.Input width="49%" height="55px" placeholder="Email" />
+              <Contact.Input
+                type="text"
+                width="49%"
+                height="55px"
+                placeholder="Name"
+              />
+              <Contact.Input
+                type="email"
+                width="49%"
+                height="55px"
+                placeholder="Email"
+              />
             </Contact.HalfInputs>
-            <Contact.Input width="100%" height="55px" placeholder="Subject" />
+            <Contact.Input
+              type="text"
+              width="100%"
+              height="55px"
+              placeholder="Subject"
+            />
             <Contact.Message
+              type="text"
               width="100%"
               height="190px"
               placeholder="Write a message..."
