@@ -37,6 +37,7 @@ export const Icons = styled.div`
 `;
 
 export const Icon = styled.div`
+  cursor: pointer;
   i {
     font-size: 28px;
     color: #f4f3ee;

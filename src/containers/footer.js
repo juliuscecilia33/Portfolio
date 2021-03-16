@@ -1,6 +1,7 @@
 import React from "react";
 import { Footer } from "../components";
 import * as ROUTES from "../constants/routes";
+import { CopyToClipboard } from "react-copy-to-clipboard";
 
 export function FooterContainer() {
   return (
@@ -14,16 +15,38 @@ export function FooterContainer() {
         </Footer.Links>
         <Footer.Icons>
           <Footer.Icon>
-            <i class="fab fa-github"></i>
+            <a
+              href="https://github.com/juliuscecilia33"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-github"></i>
+            </a>
           </Footer.Icon>
           <Footer.Icon>
-            <i class="fab fa-linkedin"></i>
+            <a
+              href="https://www.linkedin.com/in/julius-cecilia/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
           </Footer.Icon>
           <Footer.Icon>
-            <i class="fab fa-slack"></i>
+            <a
+              href="https://slack.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-slack"></i>
+            </a>
           </Footer.Icon>
           <Footer.Icon>
-            <i class="fab fa-discord"></i>
+            <CopyToClipboard text="julius!#4803">
+              <button>
+                <i class="fab fa-discord"></i>
+              </button>
+            </CopyToClipboard>
           </Footer.Icon>
         </Footer.Icons>
       </Footer>

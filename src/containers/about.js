@@ -57,7 +57,7 @@ export function AboutContainer() {
         </Logos.Contain>
       </Logos>
       <Logos>
-        <Logos.Header>Languages/Skills</Logos.Header>
+        <Logos.Header>Currently learning</Logos.Header>
         <Logos.Contain>
           <Logos.Logo src="NodeJS">Node.js</Logos.Logo>
           <Logos.Logo src="MongoDB">MongoDB</Logos.Logo>
