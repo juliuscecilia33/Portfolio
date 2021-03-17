@@ -1,18 +1,28 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
 import * as ROUTES from "./constants/routes";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import ScrollToTop from "./helpers/scrollToTop";
-import {
-  HomePage,
-  FeaturedPage,
-  InstaDeckPage,
-  FAOutletsPage,
-  CycleScanPage,
-  ReThinkPage,
-  AboutPage,
-  BeeehivePage,
-  ContactPage,
-} from "./pages";
+// import {
+//   HomePage,
+//   FeaturedPage,
+//   InstaDeckPage,
+//   FAOutletsPage,
+//   CycleScanPage,
+//   ReThinkPage,
+//   AboutPage,
+//   BeeehivePage,
+//   ContactPage,
+// } from "./pages";
+
+const HomePage = lazy(() => import("./pages/HomePage"));
+const FeaturedPage = lazy(() => import("./pages/FeaturedPage"));
+const InstaDeckPage = lazy(() => import("./pages/InstaDeckPage"));
+const FAOutletsPage = lazy(() => import("./pages/FAOutletsPage"));
+const CycleScanPage = lazy(() => import("./pages/CycleScanPage"));
+const ReThinkPage = lazy(() => import("./pages/ReThinkPage"));
+const AboutPage = lazy(() => import("./pages/AboutPage"));
+const BeeehivePage = lazy(() => import("./pages/BeeehivePage"));
+const ContactPage = lazy(() => import("./pages/ContactPage"));
 
 export default function App() {
   return (
@@ -20,49 +30,51 @@ export default function App() {
       <Router>
         <ScrollToTop />
         <Switch>
-          <Route path={ROUTES.HOME} exact>
-            <HomePage />
-          </Route>
-        </Switch>
-        <Switch>
-          <Route path={ROUTES.PROJECTS} exact>
-            <FeaturedPage />
-          </Route>
-        </Switch>
-        <Switch>
-          <Route path={ROUTES.INSTADECK} exact>
-            <InstaDeckPage />
-          </Route>
-        </Switch>
-        <Switch>
-          <Route path={ROUTES.FAOUTLETS} exact>
-            <FAOutletsPage />
-          </Route>
-        </Switch>
-        <Switch>
-          <Route path={ROUTES.CYCLESCAN} exact>
-            <CycleScanPage />
-          </Route>
-        </Switch>
-        <Switch>
-          <Route path={ROUTES.RETHINK} exact>
-            <ReThinkPage />
-          </Route>
-        </Switch>
-        <Switch>
-          <Route path={ROUTES.BEEEHIVE} exact>
-            <BeeehivePage />
-          </Route>
-        </Switch>
-        <Switch>
-          <Route path={ROUTES.ABOUT} exact>
-            <AboutPage />
-          </Route>
-        </Switch>
-        <Switch>
-          <Route path={ROUTES.CONTACT} exact>
-            <ContactPage />
-          </Route>
+          <Suspense
+            fallback={
+              <div
+                style={{
+                  width: "100%",
+                  height: "100vh",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
+                Loading Page...
+              </div>
+            }
+          >
+            <Route path={ROUTES.HOME} exact render={() => <HomePage />} />
+            <Route
+              path={ROUTES.PROJECTS}
+              exact
+              render={() => <FeaturedPage />}
+            />
+            <Route
+              path={ROUTES.INSTADECK}
+              exact
+              render={() => <InstaDeckPage />}
+            />
+            <Route
+              path={ROUTES.FAOUTLETS}
+              exact
+              render={() => <FAOutletsPage />}
+            />
+            <Route
+              path={ROUTES.CYCLESCAN}
+              exact
+              render={() => <CycleScanPage />}
+            />
+            <Route path={ROUTES.RETHINK} exact render={() => <ReThinkPage />} />
+            <Route
+              path={ROUTES.BEEEHIVE}
+              exact
+              render={() => <BeeehivePage />}
+            />
+            <Route path={ROUTES.ABOUT} exact render={() => <AboutPage />} />
+            <Route path={ROUTES.CONTACT} exact render={() => <ContactPage />} />
+          </Suspense>
         </Switch>
       </Router>
     </>
