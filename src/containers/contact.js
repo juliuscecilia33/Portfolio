@@ -2,20 +2,27 @@ import React from "react";
 import { Contact } from "../components";
 import emailjs from "emailjs-com";
 import { init } from "emailjs-com";
-init("user_dcyLphz3uv8sjix2Ij0ND");
+const {
+  REACT_APP_USER_ID,
+  REACT_APP_SERVICE_ID,
+  REACT_APP_TEMPLATE_ID,
+} = process.env;
+init(REACT_APP_USER_ID);
 
 export function ContactContainer() {
   function sendEmail(e) {
     e.preventDefault();
 
-    emailjs.sendForm("service_9axz37t", "template_xpmqxfb", e.target).then(
-      (result) => {
-        console.log(result.text);
-      },
-      (error) => {
-        console.log(error.text);
-      }
-    );
+    emailjs
+      .sendForm(REACT_APP_SERVICE_ID, REACT_APP_TEMPLATE_ID, e.target)
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
     e.target.reset();
   }
 
