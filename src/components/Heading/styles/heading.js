@@ -15,6 +15,10 @@ export const Title = styled.h2`
   font-weight: 800;
   color: #463f3a;
   margin-bottom: 1rem;
+
+  @media (max-width: 1400px) {
+    font-size: 2.8rem;
+  }
 `;
 
 export const Description = styled.p`

@@ -15,6 +15,10 @@ export const Message = styled.p`
   color: #bcb8b1;
   margin-top: 5rem;
   margin-bottom: 3rem;
+
+  @media (max-width: 1400px) {
+    font-size: 0.9rem;
+  }
 `;
 
 export const Cards = styled.div`
@@ -106,6 +110,10 @@ export const Title = styled.div`
     @media (max-width: 1550px) {
       font-size: 2rem;
     }
+
+    @media (max-width: 1400px) {
+      font-size: 1.7rem;
+    }
   }
 
   i {
@@ -119,6 +127,10 @@ export const Title = styled.div`
 
     @media (max-width: 1550px) {
       font-size: 22px;
+    }
+
+    @media (max-width: 1400px) {
+      font-size: 20px;
     }
   }
 `;
@@ -140,6 +152,11 @@ export const Description = styled.p`
     font-size: 0.8rem;
     line-height: 22px;
   }
+
+  @media (max-width: 1400px) {
+    font-size: 0.7rem;
+    line-height: 20px;
+  }
 `;
 
 export const Link = styled.h3`
@@ -153,6 +170,10 @@ export const Link = styled.h3`
 
   @media (max-width: 1550px) {
     font-size: 14px;
+  }
+
+  @media (max-width: 1400px) {
+    font-size: 13px;
   }
 
   span {
@@ -175,6 +196,10 @@ export const Hashtags = styled.div`
 
   @media (max-width: 1550px) {
     width: 99%;
+  }
+
+  @media (max-width: 1400px) {
+    width: 100%;
   }
 `;
 
@@ -199,5 +224,11 @@ export const Hashtag = styled.div`
     height: 25px;
     font-size: 0.75rem;
     padding: 0 1.2rem;
+  }
+
+  @media (max-width: 1400px) {
+    height: 22px;
+    font-size: 0.7rem;
+    padding: 0 1.1rem;
   }
 `;
