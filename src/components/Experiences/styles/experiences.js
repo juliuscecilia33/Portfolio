@@ -15,6 +15,10 @@ export const Header = styled.h2`
   font-weight: 700;
   color: #e0afa0;
   margin-bottom: 2rem;
+
+  @media (max-width: 1450px) {
+    font-size: 2rem;
+  }
 `;
 
 export const Cards = styled.div`

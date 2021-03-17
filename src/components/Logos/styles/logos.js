@@ -23,6 +23,10 @@ export const Header = styled.h2`
   font-weight: 700;
   color: #e0afa0;
   margin-bottom: 2rem;
+
+  @media (max-width: 1450px) {
+    font-size: 2rem;
+  }
 `;
 
 export const Logo = styled.div`
@@ -36,6 +40,11 @@ export const Logo = styled.div`
     height: 150px;
     width: auto;
     margin-bottom: 1rem;
+
+    @media (max-width: 1550px) {
+      height: 100px;
+      width: auto;
+    }
   }
 `;
 

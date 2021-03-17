@@ -8,6 +8,10 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   padding: 0 20%;
+
+  @media (max-width: 1350px) {
+    height: 70vh;
+  }
 `;
 
 export const Text = styled.div`
@@ -27,6 +31,10 @@ export const Title = styled.h2`
   span {
     color: #e0afa0;
   }
+
+  @media (max-width: 1600px) {
+    font-size: 3.7rem;
+  }
 `;
 
 export const Description = styled.p`
@@ -40,6 +48,10 @@ export const Description = styled.p`
   span {
     color: #8a817c;
   }
+
+  @media (max-width: 1600px) {
+    font-size: 1rem;
+  }
 `;
 
 export const Image = styled.div`
@@ -50,5 +62,9 @@ export const Image = styled.div`
   img {
     width: 90%;
     height: auto;
+  }
+
+  @media (max-width: 1600px) {
+    width: 55%;
   }
 `;
