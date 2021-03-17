@@ -1,4 +1,6 @@
 import React from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/opacity.css";
 
 import { Container, Logo, Text, Header, Contain } from "./styles/logos";
 
@@ -21,7 +23,7 @@ Logos.Contain = function LogoContain({ children, ...restProps }) {
 Logos.Logo = function LogosLogo({ src, children, ...restProps }) {
   return (
     <Logo {...restProps}>
-      <img src={`/images/${src}.png`} alt="Logo" />
+      <LazyLoadImage effect="opacity" src={`/images/${src}.png`} alt="Logo" />
       <Text>{children}</Text>
     </Logo>
   );

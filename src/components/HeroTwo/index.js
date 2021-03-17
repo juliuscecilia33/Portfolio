@@ -1,4 +1,6 @@
 import React from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/opacity.css";
 
 import { Container, Text, Title, Image, Description } from "./styles/heroTwo";
 
@@ -21,7 +23,7 @@ HeroTwo.Description = function HeroTwoDescription({ children, ...restProps }) {
 HeroTwo.Image = function HeroTwoImage({ children, ...restProps }) {
   return (
     <Image {...restProps}>
-      <img src="/images/Avatar2.png" alt="Avatar" />
+      <LazyLoadImage effect="opacity" src="/images/Avatar2.png" alt="Avatar" />
     </Image>
   );
 };

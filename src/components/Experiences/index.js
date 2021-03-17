@@ -1,5 +1,7 @@
 import React from "react";
 import { Link as ReactRouterLink } from "react-router-dom";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/opacity.css";
 
 import {
   Container,
@@ -39,7 +41,7 @@ Experiences.Card = function ExperiencesCard({
   return (
     <Card {...restProps}>
       <Image>
-        <img src={`/images/${src}.png`} alt="Logo" />
+        <LazyLoadImage effect="opacity" src={`/images/${src}.png`} alt="Logo" />
       </Image>
       <Text>
         <Title>{title}</Title>

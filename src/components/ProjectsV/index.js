@@ -1,5 +1,7 @@
 import React from "react";
 import { Link as ReactRouterLink } from "react-router-dom";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/opacity.css";
 
 import {
   Container,
@@ -42,7 +44,11 @@ ProjectsV.Card = function ProjectsVCard({
     <ReactRouterLink to={to}>
       <Card bgColor={bgColor} {...restProps}>
         <Image>
-          <img src={`/images/${src}.png`} alt="Card" />
+          <LazyLoadImage
+            effect="opacity"
+            src={`/images/${src}.png`}
+            alt="Card"
+          />
         </Image>
         <Text>{children}</Text>
       </Card>

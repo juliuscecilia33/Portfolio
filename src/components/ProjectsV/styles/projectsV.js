@@ -73,10 +73,12 @@ export const Image = styled.div`
     width: 314px;
     height: 242px;
   }
-
   img {
     width: 90%;
     height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 `;
 

@@ -1,11 +1,13 @@
 import React from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/opacity.css";
 
 import { Container, Logos, Logo, Teams, Team, Text } from "./styles/image";
 
 export default function Image({ src, children, ...restProps }) {
   return (
     <Container {...restProps}>
-      <img src={`/images/${src}.png`} alt="Imgs" />
+      <LazyLoadImage effect="opacity" src={`/images/${src}.png`} alt="Imgs" />
     </Container>
   );
 }
@@ -17,7 +19,7 @@ Image.Logos = function ImageLogos({ children, ...restProps }) {
 Image.Logo = function ImageLogo({ src, children, ...restProps }) {
   return (
     <Logo {...restProps}>
-      <img src={`/images/${src}.png`} alt="Logo" />
+      <LazyLoadImage effect="opacity" src={`/images/${src}.png`} alt="Logo" />
     </Logo>
   );
 };
@@ -29,7 +31,11 @@ Image.Teams = function ImageTeams({ children, ...restProps }) {
 Image.Team = function ImageTeam({ src, children, ...restProps }) {
   return (
     <Team {...restProps}>
-      <img src={`/images/${src}.png`} alt="Team Profile" />
+      <LazyLoadImage
+        effect="opacity"
+        src={`/images/${src}.png`}
+        alt="Team Profile"
+      />
       <Text>{children}</Text>
     </Team>
   );
