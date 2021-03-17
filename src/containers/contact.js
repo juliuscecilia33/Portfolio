@@ -74,11 +74,19 @@ export function ContactContainer() {
                 </button>
               </CopyToClipboard>
             </Contact.Icons>
+            {copy && (
+              <Alert
+                style={{ marginTop: "15px" }}
+                onClose={() => setCopy(false)}
+              >
+                Copied Discord ID!
+              </Alert>
+            )}
           </Contact.Bubble>
           <Contact.Inputs onSubmit={sendEmail}>
             {sent && (
               <Alert
-                bgcolor="linear-gradient(130.16deg, #E0AFA0 9.59%, rgba(224, 175, 160, 0.43) 102.85%);"
+                style={{ marginBottom: "15px" }}
                 onClose={() => setSent(false)}
               >
                 Message Sent!
@@ -122,14 +130,6 @@ export function ContactContainer() {
             </Contact.Button>
           </Contact.Inputs>
         </Contact.Card>
-        {copy && (
-          <Alert
-            bgcolor="linear-gradient(130.16deg, #E0AFA0 9.59%, rgba(224, 175, 160, 0.43) 102.85%);"
-            onClose={() => setCopy(false)}
-          >
-            Copied Discord ID!
-          </Alert>
-        )}
       </Contact>
     </>
   );

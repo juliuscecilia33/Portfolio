@@ -59,7 +59,7 @@ Contact.Input = function ContactInput({
 }) {
   return (
     <Input width={width} height={height} {...restProps}>
-      <input name={name} type={type} placeholder={placeholder} />
+      <input required name={name} type={type} placeholder={placeholder} />
     </Input>
   );
 };

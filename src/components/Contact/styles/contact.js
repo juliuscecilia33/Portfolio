@@ -119,7 +119,8 @@ export const Message = styled.div`
     font-size: 16px;
     color: #e0afa0;
     filter: drop-shadow(4px 7px 9px rgba(0, 0, 0, 0.25));
-    padding: 1.2rem;
+    padding: 0 1.2rem;
+    line-height: 40px;
   }
 
   &::placeholder {
