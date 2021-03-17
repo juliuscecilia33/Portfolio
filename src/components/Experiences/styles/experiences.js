@@ -36,6 +36,11 @@ export const Card = styled.div`
   margin-bottom: 4rem;
   border-radius: 50px;
   padding: 0 2rem;
+
+  @media (max-width: 1650px) {
+    height: 300px;
+    padding: 1.5rem;
+  }
 `;
 
 export const Image = styled.div`
@@ -65,6 +70,14 @@ export const Title = styled.h2`
   font-weight: 800;
   color: #463f3a;
   margin-bottom: 7px;
+
+  @media (max-width: 1650px) {
+    font-size: 2.5rem;
+  }
+
+  @media (max-width: 1450px) {
+    font-size: 2rem;
+  }
 `;
 
 export const Date = styled.p`
@@ -72,6 +85,14 @@ export const Date = styled.p`
   font-weight: 500;
   color: #e0afa0;
   margin-bottom: 7px;
+
+  @media (max-width: 1650px) {
+    font-size: 1rem;
+  }
+
+  @media (max-width: 1450px) {
+    font-size: 0.9rem;
+  }
 `;
 
 export const Location = styled.p`
@@ -79,6 +100,14 @@ export const Location = styled.p`
   font-weight: 400;
   color: #8a817c;
   margin-bottom: 1rem;
+
+  @media (max-width: 1650px) {
+    font-size: 1rem;
+  }
+
+  @media (max-width: 1450px) {
+    font-size: 0.9rem;
+  }
 `;
 
 export const Description = styled.p`
@@ -87,6 +116,16 @@ export const Description = styled.p`
   line-height: 30px;
   font-weight: 400;
   color: #8a817c;
+
+  @media (max-width: 1650px) {
+    font-size: 0.9rem;
+    line-height: 27px;
+  }
+
+  @media (max-width: 1450px) {
+    font-size: 0.9rem;
+    line-height: 26px;
+  }
 `;
 
 export const Button = styled.button`
@@ -104,4 +143,16 @@ export const Button = styled.button`
   justify-content: center;
   align-items: center;
   padding: 0 2.7rem;
+
+  @media (max-width: 1650px) {
+    height: 48px;
+    padding: 0 2.5rem;
+    font-size: 18px;
+  }
+
+  @media (max-width: 1450px) {
+    height: 45px;
+    padding: 0 2.3rem;
+    font-size: 17px;
+  }
 `;

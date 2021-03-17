@@ -43,6 +43,20 @@ export const Card = styled.div`
   padding: 1rem 1rem;
   margin: 2rem;
   cursor: pointer;
+
+  @media (max-width: 1650px) {
+    width: 359px;
+    height: 472px;
+  }
+
+  @media (max-width: 1450px) {
+    margin: 1.4rem;
+  }
+
+  @media (max-width: 1360px) {
+    width: 328px;
+    height: 432px;
+  }
 `;
 
 export const Image = styled.div`
@@ -55,6 +69,16 @@ export const Image = styled.div`
   justify-content: center;
   align-items: center;
   margin-bottom: 3rem;
+
+  @media (max-width: 1650px) {
+    width: 312px;
+    height: 241px;
+  }
+
+  @media (max-width: 1360px) {
+    width: 285px;
+    height: 220px;
+  }
 
   img {
     width: 90%;
@@ -75,6 +99,10 @@ export const Title = styled.h3`
   font-size: 2.5rem;
   color: #463f3a;
   margin-bottom: 0.5rem;
+
+  @media (max-width: 1650px) {
+    font-size: 2rem;
+  }
 `;
 
 export const Description = styled.p`
@@ -83,6 +111,17 @@ export const Description = styled.p`
   font-weight: 400;
   color: #8a817c;
   line-height: 25px;
+
+  @media (max-width: 1650px) {
+    font-size: 0.9rem;
+    line-height: 23px;
+  }
+
+  @media (max-width: 1360px) {
+    font-size: 0.8rem;
+    line-height: 22px;
+    width: 92%;
+  }
 `;
 
 export const Button = styled.button`
@@ -101,4 +140,16 @@ export const Button = styled.button`
   justify-content: center;
   align-items: center;
   padding: 0 2.7rem;
+
+  @media (max-width: 1650px) {
+    height: 48px;
+    padding: 0 2.5rem;
+    font-size: 18px;
+  }
+
+  @media (max-width: 1450px) {
+    height: 45px;
+    padding: 0 2.3rem;
+    font-size: 17px;
+  }
 `;

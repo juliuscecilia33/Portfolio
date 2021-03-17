@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { Contact } from "../components";
 import emailjs from "emailjs-com";
 import { init } from "emailjs-com";
+import { CopyToClipboard } from "react-copy-to-clipboard";
+import { Alert } from "@material-ui/lab";
 const {
   REACT_APP_USER_ID,
   REACT_APP_SERVICE_ID,
@@ -10,6 +12,8 @@ const {
 init(REACT_APP_USER_ID);
 
 export function ContactContainer() {
+  const [copy, setCopy] = useState(false);
+
   function sendEmail(e) {
     e.preventDefault();
 
@@ -42,10 +46,32 @@ export function ContactContainer() {
               <p>juliuscecilia33@gmail.com</p>
             </Contact.Labels>
             <Contact.Icons>
-              <i class="fab fa-github"></i>
-              <i class="fab fa-linkedin"></i>
-              <i class="fab fa-slack"></i>
-              <i class="fab fa-discord"></i>
+              <a
+                href="https://github.com/juliuscecilia33"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/julius-cecilia/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a
+                href="https://slack.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-slack"></i>
+              </a>
+              <CopyToClipboard text="julius!#4803">
+                <button onClick={() => setCopy(true)}>
+                  <i class="fab fa-discord"></i>
+                </button>
+              </CopyToClipboard>
             </Contact.Icons>
           </Contact.Bubble>
           <Contact.Inputs onSubmit={sendEmail}>
@@ -85,6 +111,14 @@ export function ContactContainer() {
             <Contact.Button type="submit">Send Message</Contact.Button>
           </Contact.Inputs>
         </Contact.Card>
+        {copy && (
+          <Alert
+            bgcolor="linear-gradient(130.16deg, #E0AFA0 9.59%, rgba(224, 175, 160, 0.43) 102.85%);"
+            onClose={() => setCopy(false)}
+          >
+            Copied Discord ID!
+          </Alert>
+        )}
       </Contact>
     </>
   );

@@ -26,6 +26,10 @@ export const Link = styled.h3`
   &:hover {
     color: #8a817c;
   }
+
+  @media (max-width: 1360px) {
+    font-size: 1rem;
+  }
 `;
 
 export const Icons = styled.div`
@@ -39,5 +43,9 @@ export const Icon = styled.div`
   i {
     font-size: 28px;
     color: #e0afa0;
+
+    @media (max-width: 1360px) {
+      font-size: 25px;
+    }
   }
 `;

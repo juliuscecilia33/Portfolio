@@ -44,13 +44,18 @@ export const Bubble = styled.div`
   );
   border-radius: 50px;
   padding: 0 1rem;
+
+  @media (max-width: 1450px) {
+    padding: 1.2rem;
+  }
 `;
 
 export const Title = styled.h3`
   font-weight: 700;
-  font-size: 32px;
+  font-size: 1.5rem;
   color: #f4f3ee;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
 `;
 
 export const Description = styled.p`
@@ -125,20 +130,36 @@ export const Message = styled.div`
 export const Labels = styled.div`
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 100%;
   margin-bottom: 1rem;
-  padding: 0 1.5rem;
 
   i {
     font-size: 28px;
     color: #f4f3ee;
     margin-right: 1rem;
+
+    @media (max-width: 1650px) {
+      font-size: 25px;
+    }
+
+    @media (max-width: 1400px) {
+      font-size: 19px;
+    }
   }
 
   p {
     font-weight: 500;
     font-size: 16px;
     color: #f4f3ee;
+
+    @media (max-width: 1650px) {
+      font-size: 15px;
+    }
+
+    @media (max-width: 1400px) {
+      font-size: 14px;
+    }
   }
 `;
 
@@ -152,6 +173,10 @@ export const Icons = styled.div`
   i {
     font-size: 28px;
     color: #f4f3ee;
+
+    @media (max-width: 1400px) {
+      font-size: 24px;
+    }
   }
 `;
 
@@ -172,4 +197,9 @@ export const Button = styled.button`
   font-weight: 600;
   font-size: 1rem;
   margin-top: 1rem;
+
+  @media (max-width: 1650px) {
+    height: 40px;
+    font-size: 0.9rem;
+  }
 `;
