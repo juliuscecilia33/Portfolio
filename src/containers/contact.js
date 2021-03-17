@@ -13,6 +13,7 @@ init(REACT_APP_USER_ID);
 
 export function ContactContainer() {
   const [copy, setCopy] = useState(false);
+  const [sent, setSent] = useState(false);
 
   function sendEmail(e) {
     e.preventDefault();
@@ -75,6 +76,14 @@ export function ContactContainer() {
             </Contact.Icons>
           </Contact.Bubble>
           <Contact.Inputs onSubmit={sendEmail}>
+            {sent && (
+              <Alert
+                bgcolor="linear-gradient(130.16deg, #E0AFA0 9.59%, rgba(224, 175, 160, 0.43) 102.85%);"
+                onClose={() => setSent(false)}
+              >
+                Message Sent!
+              </Alert>
+            )}
             <Contact.Description>
               Fill up the form and I will get back to you as soon as I can!
             </Contact.Description>
@@ -101,14 +110,16 @@ export function ContactContainer() {
               placeholder="Subject"
               name="subject"
             />
-            <Contact.Message
+            <Contact.Input
               type="text"
               width="100%"
               height="190px"
               placeholder="Write a message..."
               name="message"
             />
-            <Contact.Button type="submit">Send Message</Contact.Button>
+            <Contact.Button onClick={() => setSent(true)} type="submit">
+              Send Message
+            </Contact.Button>
           </Contact.Inputs>
         </Contact.Card>
         {copy && (
