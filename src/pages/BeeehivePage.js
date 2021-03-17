@@ -22,7 +22,15 @@ export default function BeeehivePage() {
               </ProjectsV.Description>
               <ProjectsV.Link>
                 Check it out here:{" "}
-                <span>https://devpost.com/software/beehive</span>
+                <span>
+                  <a
+                    href="https://devpost.com/software/beehive"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    https://devpost.com/software/beehive
+                  </a>
+                </span>
               </ProjectsV.Link>
               <ProjectsV.Hashtags>
                 <ProjectsV.Hashtag>React.js</ProjectsV.Hashtag>

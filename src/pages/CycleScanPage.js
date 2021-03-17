@@ -23,7 +23,15 @@ export default function CycleScanPage() {
               </ProjectsV.Description>
               <ProjectsV.Link>
                 Check it out here:{" "}
-                <span>https://devpost.com/software/cyclescan</span>
+                <span>
+                  <a
+                    href="https://devpost.com/software/cyclescan"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    https://devpost.com/software/cyclescan
+                  </a>
+                </span>
               </ProjectsV.Link>
               <ProjectsV.Hashtags>
                 <ProjectsV.Hashtag>React Native</ProjectsV.Hashtag>

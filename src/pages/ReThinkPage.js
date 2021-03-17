@@ -22,7 +22,16 @@ export default function ReThinkPage() {
                 sustainable businesses.
               </ProjectsV.Description>
               <ProjectsV.Link>
-                Check it out here: <span>www.subinitiative.com/</span>
+                Check it out here:{" "}
+                <span>
+                  <a
+                    href="www.subinitiative.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    www.subinitiative.com/
+                  </a>
+                </span>
               </ProjectsV.Link>
               <ProjectsV.Hashtags>
                 <ProjectsV.Hashtag>React.js</ProjectsV.Hashtag>

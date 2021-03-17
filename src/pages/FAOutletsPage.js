@@ -21,7 +21,16 @@ export default function FAOutletsPage() {
                 and products into one online hub!
               </ProjectsV.Description>
               <ProjectsV.Link>
-                Check it out here: <span>faoutlets.netlify.app</span>
+                Check it out here:{" "}
+                <span>
+                  <a
+                    href="faoutlets.netlify.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    faoutlets.netlify.app
+                  </a>
+                </span>
               </ProjectsV.Link>
               <ProjectsV.Hashtags>
                 <ProjectsV.Hashtag>React.js</ProjectsV.Hashtag>

@@ -21,7 +21,16 @@ export function ProjectsVContainer() {
               Firebase!
             </ProjectsV.Description>
             <ProjectsV.Link>
-              Check it out here: <span>instadeck.netlify.app</span>
+              Check it out here:{" "}
+              <span>
+                <a
+                  href="instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  instadeck.netlify.app
+                </a>
+              </span>
             </ProjectsV.Link>
             <ProjectsV.Hashtags>
               <ProjectsV.Hashtag>React.js</ProjectsV.Hashtag>
@@ -40,7 +49,16 @@ export function ProjectsVContainer() {
               and products into one online hub!
             </ProjectsV.Description>
             <ProjectsV.Link>
-              Check it out here: <span>faoutlets.netlify.app</span>
+              Check it out here:{" "}
+              <span>
+                <a
+                  href="faoutlets.netlify.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  faoutlets.netlify.app
+                </a>
+              </span>
             </ProjectsV.Link>
             <ProjectsV.Hashtags>
               <ProjectsV.Hashtag>React.js</ProjectsV.Hashtag>
@@ -62,7 +80,15 @@ export function ProjectsVContainer() {
             </ProjectsV.Description>
             <ProjectsV.Link>
               Check it out here:{" "}
-              <span>https://devpost.com/software/cyclescan</span>
+              <span>
+                <a
+                  href="https://devpost.com/software/cyclescan"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  https://devpost.com/software/cyclescan
+                </a>
+              </span>
             </ProjectsV.Link>
             <ProjectsV.Hashtags>
               <ProjectsV.Hashtag>React Native</ProjectsV.Hashtag>
@@ -81,7 +107,16 @@ export function ProjectsVContainer() {
               sustainable businesses.
             </ProjectsV.Description>
             <ProjectsV.Link>
-              Check it out here: <span>www.subinitiative.com/</span>
+              Check it out here:{" "}
+              <span>
+                <a
+                  href="www.subinitiative.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  www.subinitiative.com/
+                </a>
+              </span>
             </ProjectsV.Link>
             <ProjectsV.Hashtags>
               <ProjectsV.Hashtag>React.js</ProjectsV.Hashtag>
@@ -97,7 +132,15 @@ export function ProjectsVContainer() {
             </ProjectsV.Description>
             <ProjectsV.Link>
               Check it out here:{" "}
-              <span>https://devpost.com/software/beehive</span>
+              <span>
+                <a
+                  href="https://devpost.com/software/beehive"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  https://devpost.com/software/beehive
+                </a>
+              </span>
             </ProjectsV.Link>
             <ProjectsV.Hashtags>
               <ProjectsV.Hashtag>React.js</ProjectsV.Hashtag>

@@ -21,7 +21,16 @@ export default function InstaDeckPage() {
                 Firebase!
               </ProjectsV.Description>
               <ProjectsV.Link>
-                Check it out here: <span>instadeck.netlify.app</span>
+                Check it out here:{" "}
+                <span>
+                  <a
+                    href="instagram.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    instadeck.netlify.app
+                  </a>
+                </span>
               </ProjectsV.Link>
               <ProjectsV.Hashtags>
                 <ProjectsV.Hashtag>React.js</ProjectsV.Hashtag>
