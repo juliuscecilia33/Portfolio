@@ -13,6 +13,14 @@ export const Title = styled.h2`
   font-size: 3rem;
   color: #e0afa0;
   margin-bottom: 0.7rem;
+
+  @media (max-width: 1550px) {
+    font-size: 2.5rem;
+  }
+
+  @media (max-width: 1350px) {
+    font-size: 2rem;
+  }
 `;
 
 export const Description = styled.p`
@@ -25,6 +33,10 @@ export const Description = styled.p`
     color: #e0afa0;
     font-weight: 500;
   }
+
+  @media (max-width: 1550px) {
+    font-size: 1rem;
+  }
 `;
 
 export const Message = styled.p`
@@ -32,4 +44,12 @@ export const Message = styled.p`
   font-weight: 400;
   color: #8a817c;
   margin-top: 3rem;
+
+  @media (max-width: 1550px) {
+    font-size: 1rem;
+  }
+
+  @media (max-width: 1350px) {
+    font-size: 0.8rem;
+  }
 `;
