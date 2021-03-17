@@ -1,7 +1,6 @@
 import React from "react";
 import { Link as ReactRouterLink } from "react-router-dom";
-import { LazyLoadImage } from "react-lazy-load-image-component";
-import "react-lazy-load-image-component/src/effects/opacity.css";
+import LazyLoad from "react-lazyload";
 
 import {
   Container,
@@ -45,11 +44,16 @@ ProjectsH.Card = function ProjectsHCard({
     <ReactRouterLink to={to}>
       <Card bgColor={bgColor} {...restProps}>
         <Image>
-          <LazyLoadImage
-            effect="opacity"
-            src={`/images/${src}.png`}
-            alt="Card"
-          />
+          <LazyLoad
+            height={200}
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <img src={`/images/${src}.png`} alt="Card" />
+          </LazyLoad>
         </Image>
         <Text>
           <Title>{title}</Title>
