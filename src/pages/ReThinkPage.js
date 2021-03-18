@@ -20,7 +20,12 @@ export default function ReThinkPage() {
               href="https://subinitiative.com/"
               cursor="default"
             >
-              <ProjectsV.Title>ReThink</ProjectsV.Title>
+              <ProjectsV.Title
+                ghLink="https://github.com/ReThink-SUB/ReThink"
+                regLink="https://subinitiative.com/"
+              >
+                ReThink
+              </ProjectsV.Title>
               <ProjectsV.Description>
                 A centralized, web-based platform to identify and promote small,
                 sustainable businesses.

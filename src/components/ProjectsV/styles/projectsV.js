@@ -139,21 +139,26 @@ export const Title = styled.div`
     }
   }
 
-  i {
-    font-size: 27px;
-    color: #e0afa0;
-    margin-right: 1rem;
+  a {
+    width: 8%;
+    z-index: 15;
 
-    @media (max-width: 1650px) {
-      font-size: 25px;
-    }
+    i {
+      font-size: 27px;
+      color: #e0afa0;
+      margin-right: 1rem;
 
-    @media (max-width: 1550px) {
-      font-size: 22px;
-    }
+      @media (max-width: 1650px) {
+        font-size: 25px;
+      }
 
-    @media (max-width: 1400px) {
-      font-size: 20px;
+      @media (max-width: 1550px) {
+        font-size: 22px;
+      }
+
+      @media (max-width: 1400px) {
+        font-size: 20px;
+      }
     }
   }
 `;

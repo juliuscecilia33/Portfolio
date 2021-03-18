@@ -96,12 +96,21 @@ ProjectsV.Description = function ProjectsVDescription({
   return <Description {...restProps}>{children}</Description>;
 };
 
-ProjectsV.Title = function ProjectsVTitle({ children, ...restProps }) {
+ProjectsV.Title = function ProjectsVTitle({
+  regLink,
+  ghLink,
+  children,
+  ...restProps
+}) {
   return (
     <Title {...restProps}>
       <h2>{children}</h2>
-      <i class="fab fa-github"></i>
-      <i class="fas fa-link"></i>
+      <a href={ghLink}>
+        <i className="fab fa-github"></i>
+      </a>
+      <a href={regLink}>
+        <i className="fas fa-link"></i>
+      </a>
     </Title>
   );
 };

@@ -20,7 +20,12 @@ export default function FAOutletsPage() {
               src="FAOutlets"
               cursor="default"
             >
-              <ProjectsV.Title>FAOutlets</ProjectsV.Title>
+              <ProjectsV.Title
+                ghLink="https://github.com/juliuscecilia33/FAOutlets"
+                regLink="https://faoutlets.netlify.app/"
+              >
+                FAOutlets
+              </ProjectsV.Title>
               <ProjectsV.Description>
                 An E-commerce Store that combines all Food Allergy manufacturers
                 and products into one online hub!

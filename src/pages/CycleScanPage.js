@@ -20,7 +20,12 @@ export default function CycleScanPage() {
               src="CycleScan"
               cursor="default"
             >
-              <ProjectsV.Title>CycleScan</ProjectsV.Title>
+              <ProjectsV.Title
+                ghLink="https://github.com/bkenza/CycleScan"
+                regLink="https://devpost.com/software/cyclescan"
+              >
+                CycleScan
+              </ProjectsV.Title>
               <ProjectsV.Description>
                 Cross-platform mobile application that determines whether an
                 object is recyclable, compostable or neither using object

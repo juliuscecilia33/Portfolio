@@ -20,7 +20,12 @@ export default function BeeehivePage() {
               src="Beeehive"
               cursor="default"
             >
-              <ProjectsV.Title>Beeehive</ProjectsV.Title>
+              <ProjectsV.Title
+                ghLink="https://github.com/juliuscecilia33/BeeeHive"
+                regLink="https://devpost.com/software/beehive"
+              >
+                Beeehive
+              </ProjectsV.Title>
               <ProjectsV.Description>
                 Beehive is a website designed to combine communication channels
                 that have become popular in the new age of online learning.

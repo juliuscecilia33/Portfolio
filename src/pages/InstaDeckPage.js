@@ -20,7 +20,12 @@ export default function InstaDeckPage() {
               src="InstaDeck"
               cursor="default"
             >
-              <ProjectsV.Title>InstaDeck</ProjectsV.Title>
+              <ProjectsV.Title
+                ghLink="https://github.com/juliuscecilia33/InstaDeck"
+                regLink="https://github.com/juliuscecilia33/InstaDeck"
+              >
+                InstaDeck
+              </ProjectsV.Title>
               <ProjectsV.Description>
                 A semi-dashboard interface of Instagram made with React and
                 Firebase!
