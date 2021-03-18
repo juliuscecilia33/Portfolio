@@ -14,6 +14,7 @@ import {
   Link,
   Hashtags,
   Hashtag,
+  AnchorCard,
 } from "./styles/projectsV";
 
 export default function ProjectsV({ bgColor, children, ...restProps }) {
@@ -57,6 +58,34 @@ ProjectsV.Card = function ProjectsVCard({
         <Text>{children}</Text>
       </Card>
     </ReactRouterLink>
+  );
+};
+
+ProjectsV.AnchorCard = function ProjectsVCard({
+  href,
+  src,
+  bgColor,
+  children,
+  ...restProps
+}) {
+  return (
+    <a href={href}>
+      <AnchorCard bgColor={bgColor} {...restProps}>
+        <Image>
+          <LazyLoad
+            height={200}
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <img src={`/images/${src}.png`} alt="Anchor" />
+          </LazyLoad>
+        </Image>
+        <Text>{children}</Text>
+      </AnchorCard>
+    </a>
   );
 };
 

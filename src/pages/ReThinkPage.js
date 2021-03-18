@@ -6,7 +6,6 @@ import {
   ReThinkContainer,
   FooterContainer,
 } from "../containers";
-import * as ROUTES from "../constants/routes";
 
 export default function ReThinkPage() {
   return (
@@ -15,7 +14,12 @@ export default function ReThinkPage() {
       <HeadingContainer height="55vh" bgColor="#E3EAF5">
         <ProjectsV>
           <ProjectsV.Cards>
-            <ProjectsV.Card bgColor="#F4F3EE" src="ReThink" to={ROUTES.RETHINK}>
+            <ProjectsV.AnchorCard
+              bgColor="#F4F3EE"
+              src="ReThink"
+              href="https://subinitiative.com/"
+              cursor="default"
+            >
               <ProjectsV.Title>ReThink</ProjectsV.Title>
               <ProjectsV.Description>
                 A centralized, web-based platform to identify and promote small,
@@ -25,7 +29,7 @@ export default function ReThinkPage() {
                 Check it out here:{" "}
                 <span>
                   <a
-                    href="www.subinitiative.com/"
+                    href="https://subinitiative.com/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -38,7 +42,7 @@ export default function ReThinkPage() {
                 <ProjectsV.Hashtag>Styled-Components</ProjectsV.Hashtag>
                 <ProjectsV.Hashtag>Firebase</ProjectsV.Hashtag>
               </ProjectsV.Hashtags>
-            </ProjectsV.Card>
+            </ProjectsV.AnchorCard>
           </ProjectsV.Cards>
         </ProjectsV>
       </HeadingContainer>

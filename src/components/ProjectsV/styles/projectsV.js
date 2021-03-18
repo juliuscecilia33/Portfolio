@@ -54,6 +54,27 @@ export const Card = styled.div`
   }
 `;
 
+export const AnchorCard = styled.div`
+  width: 100%;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: ${({ bgColor }) => bgColor};
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 40px;
+  margin-bottom: 3rem;
+  cursor: pointer;
+
+  @media (max-width: 1650px) {
+    height: 300px;
+  }
+
+  @media (max-width: 1550px) {
+    height: 275px;
+  }
+`;
+
 export const Image = styled.div`
   width: 370px;
   height: 285px;
@@ -165,6 +186,7 @@ export const Link = styled.h3`
   font-size: 18px;
   font-weight: 500;
   color: #8a817c;
+  z-index: 10;
 
   @media (max-width: 1650px) {
     font-size: 1rem;

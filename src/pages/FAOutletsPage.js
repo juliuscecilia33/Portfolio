@@ -14,7 +14,12 @@ export default function FAOutletsPage() {
       <HeadingContainer height="55vh" bgColor="#E3F2F5">
         <ProjectsV>
           <ProjectsV.Cards>
-            <ProjectsV.Card bgColor="#F4F3EE" src="FAOutlets">
+            <ProjectsV.AnchorCard
+              href="https://faoutlets.netlify.app"
+              bgColor="#F4F3EE"
+              src="FAOutlets"
+              cursor="default"
+            >
               <ProjectsV.Title>FAOutlets</ProjectsV.Title>
               <ProjectsV.Description>
                 An E-commerce Store that combines all Food Allergy manufacturers
@@ -24,7 +29,7 @@ export default function FAOutletsPage() {
                 Check it out here:{" "}
                 <span>
                   <a
-                    href="faoutlets.netlify.app"
+                    href="https://faoutlets.netlify.app"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -38,7 +43,7 @@ export default function FAOutletsPage() {
                 <ProjectsV.Hashtag>Stripe</ProjectsV.Hashtag>
                 <ProjectsV.Hashtag>Commerce.js</ProjectsV.Hashtag>
               </ProjectsV.Hashtags>
-            </ProjectsV.Card>
+            </ProjectsV.AnchorCard>
           </ProjectsV.Cards>
         </ProjectsV>
       </HeadingContainer>

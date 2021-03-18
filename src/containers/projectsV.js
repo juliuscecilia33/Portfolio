@@ -14,6 +14,7 @@ export function ProjectsVContainer() {
             bgColor="#F5E9E3"
             src="InstaDeck"
             to={ROUTES.INSTADECK}
+            cursor="pointer"
           >
             <ProjectsV.Title>InstaDeck</ProjectsV.Title>
             <ProjectsV.Description>
@@ -42,6 +43,7 @@ export function ProjectsVContainer() {
             bgColor="#E3F2F5"
             src="FAOutlets"
             to={ROUTES.FAOUTLETS}
+            cursor="pointer"
           >
             <ProjectsV.Title>FAOutlets</ProjectsV.Title>
             <ProjectsV.Description>
@@ -71,6 +73,7 @@ export function ProjectsVContainer() {
             bgColor="#E6F5E3;"
             src="CycleScan"
             to={ROUTES.CYCLESCAN}
+            cursor="pointer"
           >
             <ProjectsV.Title>CycleScan</ProjectsV.Title>
             <ProjectsV.Description>
@@ -100,7 +103,12 @@ export function ProjectsVContainer() {
               <ProjectsV.Hashtag>Google Cloud Vision API</ProjectsV.Hashtag>
             </ProjectsV.Hashtags>
           </ProjectsV.Card>
-          <ProjectsV.Card bgColor="#E3EAF5" src="ReThink" to={ROUTES.RETHINK}>
+          <ProjectsV.Card
+            bgColor="#E3EAF5"
+            src="ReThink"
+            to={ROUTES.RETHINK}
+            cursor="pointer"
+          >
             <ProjectsV.Title>ReThink</ProjectsV.Title>
             <ProjectsV.Description>
               A centralized, web-based platform to identify and promote small,
@@ -124,7 +132,12 @@ export function ProjectsVContainer() {
               <ProjectsV.Hashtag>Firebase</ProjectsV.Hashtag>
             </ProjectsV.Hashtags>
           </ProjectsV.Card>
-          <ProjectsV.Card bgColor="#F5F5E3" src="Beeehive" to={ROUTES.BEEEHIVE}>
+          <ProjectsV.Card
+            bgColor="#F5F5E3"
+            src="Beeehive"
+            to={ROUTES.BEEEHIVE}
+            cursor="pointer"
+          >
             <ProjectsV.Title>Beeehive</ProjectsV.Title>
             <ProjectsV.Description>
               Beehive is a website designed to combine communication channels

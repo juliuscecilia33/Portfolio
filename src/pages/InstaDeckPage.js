@@ -14,7 +14,12 @@ export default function InstaDeckPage() {
       <HeadingContainer height="55vh" bgColor="#F5E9E3">
         <ProjectsV>
           <ProjectsV.Cards>
-            <ProjectsV.Card bgColor="#F4F3EE" src="InstaDeck">
+            <ProjectsV.AnchorCard
+              href="https://github.com/juliuscecilia33/InstaDeck"
+              bgColor="#F4F3EE"
+              src="InstaDeck"
+              cursor="default"
+            >
               <ProjectsV.Title>InstaDeck</ProjectsV.Title>
               <ProjectsV.Description>
                 A semi-dashboard interface of Instagram made with React and
@@ -24,7 +29,7 @@ export default function InstaDeckPage() {
                 Check it out here:{" "}
                 <span>
                   <a
-                    href="instagram.com"
+                    href="https://github.com/juliuscecilia33/InstaDeck"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -37,7 +42,7 @@ export default function InstaDeckPage() {
                 <ProjectsV.Hashtag>Styled-Components</ProjectsV.Hashtag>
                 <ProjectsV.Hashtag>Firebase</ProjectsV.Hashtag>
               </ProjectsV.Hashtags>
-            </ProjectsV.Card>
+            </ProjectsV.AnchorCard>
           </ProjectsV.Cards>
         </ProjectsV>
       </HeadingContainer>

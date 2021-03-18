@@ -14,7 +14,12 @@ export default function BeeehivePage() {
       <HeadingContainer height="55vh" bgColor="#F5F5E3">
         <ProjectsV>
           <ProjectsV.Cards>
-            <ProjectsV.Card bgColor="#F4F3EE" src="Beeehive">
+            <ProjectsV.AnchorCard
+              href="https://devpost.com/software/beehive"
+              bgColor="#F4F3EE"
+              src="Beeehive"
+              cursor="default"
+            >
               <ProjectsV.Title>Beeehive</ProjectsV.Title>
               <ProjectsV.Description>
                 Beehive is a website designed to combine communication channels
@@ -39,7 +44,7 @@ export default function BeeehivePage() {
                 <ProjectsV.Hashtag>Express.js</ProjectsV.Hashtag>
                 <ProjectsV.Hashtag>MongoDB-Atlas</ProjectsV.Hashtag>
               </ProjectsV.Hashtags>
-            </ProjectsV.Card>
+            </ProjectsV.AnchorCard>
           </ProjectsV.Cards>
         </ProjectsV>
       </HeadingContainer>

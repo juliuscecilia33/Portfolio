@@ -14,7 +14,12 @@ export default function CycleScanPage() {
       <HeadingContainer height="55vh" bgColor="#E6F5E3">
         <ProjectsV>
           <ProjectsV.Cards>
-            <ProjectsV.Card bgColor="#F4F3EE" src="CycleScan">
+            <ProjectsV.AnchorCard
+              href="https://devpost.com/software/cyclescan"
+              bgColor="#F4F3EE"
+              src="CycleScan"
+              cursor="default"
+            >
               <ProjectsV.Title>CycleScan</ProjectsV.Title>
               <ProjectsV.Description>
                 Cross-platform mobile application that determines whether an
@@ -42,7 +47,7 @@ export default function CycleScanPage() {
                 <ProjectsV.Hashtag>Flask</ProjectsV.Hashtag>
                 <ProjectsV.Hashtag>Google Cloud Vision API</ProjectsV.Hashtag>
               </ProjectsV.Hashtags>
-            </ProjectsV.Card>
+            </ProjectsV.AnchorCard>
           </ProjectsV.Cards>
         </ProjectsV>
       </HeadingContainer>
