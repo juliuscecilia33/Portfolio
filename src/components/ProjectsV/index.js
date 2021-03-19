@@ -105,10 +105,10 @@ ProjectsV.Title = function ProjectsVTitle({
   return (
     <Title {...restProps}>
       <h2>{children}</h2>
-      <a href={ghLink}>
+      <a href={ghLink} target="_blank" rel="noopener noreferrer">
         <i className="fab fa-github"></i>
       </a>
-      <a href={regLink}>
+      <a href={regLink} target="_blank" rel="noopener noreferrer">
         <i className="fas fa-link"></i>
       </a>
     </Title>
