@@ -57,6 +57,7 @@ export const Image = styled.div`
   img {
     width: 240px;
     height: auto;
+    border-radius: 20px;
   }
 `;
 

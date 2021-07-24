@@ -9,11 +9,11 @@ export function ExperiencesContainer() {
         <Experiences.Header>Experiences</Experiences.Header>
         <Experiences.Cards>
           <Experiences.Card
-            title="Frontend Developer"
-            date="Jan. 2021 - Present"
+            title="Software Engineer Intern"
+            date="March 2021 - Present"
             location="Seattle, Washington"
-            description="I am a Front-End Developer for a Business RSO at UW that is creating a centralized, web-based platform to identify and promote small, sustainable businesses. We are using React.js to create an interactive UI and will also be utilizing Google Firebase to help store the data for each business."
-            src="ReThinkLogo"
+            description="Using React.js, several AWS (Cognito, Amplify, Route 53, Lambda, EC2, RDS) technologies, and Python to develop a web application and assist with the company's goal of creating cutting edge cancer treatment diagnostics and therapies for patients recovering from COVID-19."
+            src="Chimerocyte"
           />
         </Experiences.Cards>
         <Experiences.Button to={ROUTES.ABOUT}>
