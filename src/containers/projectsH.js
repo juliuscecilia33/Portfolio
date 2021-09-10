@@ -33,11 +33,12 @@ export function ProjectsHContainer() {
             to={ROUTES.CYCLESCAN}
           />
           <ProjectsH.Card
-            src="ReThink"
-            title="ReThink"
-            description="A centralized, web-based platform to identify and promote small, sustainable businesses."
-            bgColor="#E3EAF5"
-            to={ROUTES.RETHINK}
+            src="Joblicant"
+            title="Joblicant"
+            description="A dashboard interface showcasing all your job applications in one
+              place!"
+            bgColor="#F5EEE3"
+            to={ROUTES.JOBLICANT}
           />
         </ProjectsH.Cards>
         <ProjectsH.Button to={ROUTES.PROJECTS}>

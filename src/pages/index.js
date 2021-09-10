@@ -7,3 +7,4 @@ export { default as ReThinkPage } from "./ReThinkPage";
 export { default as AboutPage } from "./AboutPage";
 export { default as BeeehivePage } from "./BeeehivePage";
 export { default as ContactPage } from "./ContactPage";
+export { default as JoblicantPage } from "./JoblicantPage";

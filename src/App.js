@@ -2,17 +2,6 @@ import React, { Suspense, lazy } from "react";
 import * as ROUTES from "./constants/routes";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import ScrollToTop from "./helpers/scrollToTop";
-// import {
-//   HomePage,
-//   FeaturedPage,
-//   InstaDeckPage,
-//   FAOutletsPage,
-//   CycleScanPage,
-//   ReThinkPage,
-//   AboutPage,
-//   BeeehivePage,
-//   ContactPage,
-// } from "./pages";
 
 const HomePage = lazy(() => import("./pages/HomePage"));
 const FeaturedPage = lazy(() => import("./pages/FeaturedPage"));
@@ -23,6 +12,7 @@ const ReThinkPage = lazy(() => import("./pages/ReThinkPage"));
 const AboutPage = lazy(() => import("./pages/AboutPage"));
 const BeeehivePage = lazy(() => import("./pages/BeeehivePage"));
 const ContactPage = lazy(() => import("./pages/ContactPage"));
+const JoblicantPage = lazy(() => import("./pages/JoblicantPage"));
 
 export default function App() {
   return (
@@ -65,6 +55,11 @@ export default function App() {
               path={ROUTES.CYCLESCAN}
               exact
               render={() => <CycleScanPage />}
+            />
+            <Route
+              path={ROUTES.JOBLICANT}
+              exact
+              render={() => <JoblicantPage />}
             />
             <Route path={ROUTES.RETHINK} exact render={() => <ReThinkPage />} />
             <Route

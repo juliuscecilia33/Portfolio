@@ -13,3 +13,4 @@ export { AboutContainer } from "./about";
 export { HeroTwoContainer } from "./heroTwo";
 export { BeeehiveContainer } from "./beeehive";
 export { ContactContainer } from "./contact";
+export { JoblicantContainer } from "./joblicant";

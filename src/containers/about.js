@@ -11,14 +11,14 @@ export function AboutContainer() {
         <Experiences.Cards>
           <Experiences.Card
             title="Software Engineer Intern"
-            date="March 2021 - Present"
+            date="Mar. 2021 - Aug. 2021"
             location="Seattle, Washington"
             description="Using React.js, several AWS (Cognito, Amplify, Route 53, Lambda, EC2, RDS) technologies, and Python to develop a web application and assist with the company's goal of creating cutting edge cancer treatment diagnostics and therapies for patients recovering from COVID-19."
             src="Chimerocyte"
           />
           <Experiences.Card
-            title="Web Applications Dev Intern"
-            date="Jan. 2021 - Present"
+            title="Software Engineer Intern"
+            date="June 2021 - Sept. 2021"
             location="La Mirada, California"
             description="Improved website user experience and maintained existing web applications through Angular, Drupal CMS, Typescript, PHP, and Shopify. Also, I'm working in an agile/scrum sprint system where I have solved 20+ tickets resulting in customers across the globe having the best experience and accessibility on our site."
             src="IQAir"
@@ -91,7 +91,7 @@ export function AboutContainer() {
         <Experiences.Header>Education</Experiences.Header>
         <Experiences.Cards>
           <Experiences.Card
-            title="Freshman, Class of 2024"
+            title="Sophmore, Class of 2024"
             location="Seattle, Washington"
             description="Intended Major: Informatics"
             date="GPA: 3.8"

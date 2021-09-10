@@ -40,6 +40,38 @@ export function ProjectsVContainer() {
             </ProjectsV.Hashtags>
           </ProjectsV.Card>
           <ProjectsV.Card
+            bgColor="#F5EEE3"
+            src="Joblicant"
+            to={ROUTES.JOBLICANT}
+            cursor="pointer"
+          >
+            <ProjectsV.Title>Joblicant</ProjectsV.Title>
+            <ProjectsV.Description>
+              A dashboard interface showcasing all your job applications in one
+              place!
+            </ProjectsV.Description>
+            <ProjectsV.Link>
+              Check it out here:{" "}
+              <span>
+                <a
+                  href="https://github.com/juliuscecilia33/Joblicant"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  github.com/juliuscecilia33/Joblicant
+                </a>
+              </span>
+            </ProjectsV.Link>
+            <ProjectsV.Hashtags>
+              <ProjectsV.Hashtag>React.js</ProjectsV.Hashtag>
+              <ProjectsV.Hashtag>Python</ProjectsV.Hashtag>
+              <ProjectsV.Hashtag>Django</ProjectsV.Hashtag>
+              <ProjectsV.Hashtag>Typescript</ProjectsV.Hashtag>
+              <ProjectsV.Hashtag>SQLite</ProjectsV.Hashtag>
+              <ProjectsV.Hashtag>Styled Components</ProjectsV.Hashtag>
+            </ProjectsV.Hashtags>
+          </ProjectsV.Card>
+          <ProjectsV.Card
             bgColor="#E3F2F5"
             src="FAOutlets"
             to={ROUTES.FAOUTLETS}

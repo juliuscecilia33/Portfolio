@@ -7,3 +7,4 @@ export const FAOUTLETS = "/projects/faoutlets";
 export const CYCLESCAN = "/projects/cyclescan";
 export const RETHINK = "/projects/rethink";
 export const BEEEHIVE = "/projects/beeehive";
+export const JOBLICANT = "/projects/joblicant";

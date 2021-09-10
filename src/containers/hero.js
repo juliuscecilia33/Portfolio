@@ -12,10 +12,11 @@ export function HeroContainer() {
           <Hero.Description>
             I’m a student at the <span>University of Washington</span> intending
             to major in Informatics! <br />
-            <br />I envision myself to become a{" "}
-            <span>Web Developer/Software Engineer</span> as I want to create and
-            help others in their everyday lives through the form of a website or
-            app.
+            <br />I envision myself to become a <span>
+              Software Engineer
+            </span>{" "}
+            as I want to create and help others in their everyday lives through
+            the form of a website or app.
           </Hero.Description>
         </Hero.Text>
         <Hero.Image />
