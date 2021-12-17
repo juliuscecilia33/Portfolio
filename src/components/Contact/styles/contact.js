@@ -15,6 +15,10 @@ export const Header = styled.h2`
   font-weight: 700;
   color: #e0afa0;
   margin-bottom: 2rem;
+
+  @media (max-width: 1300px) {
+    font-size: 2.3rem;
+  }
 `;
 
 export const Card = styled.div`
@@ -56,6 +60,10 @@ export const Title = styled.h3`
   color: #f4f3ee;
   margin-bottom: 2rem;
   text-align: center;
+
+  @media (max-width: 1300px) {
+    font-size: 1rem;
+  }
 `;
 
 export const Description = styled.p`
@@ -63,6 +71,10 @@ export const Description = styled.p`
   font-weight: 400;
   color: #8a817c;
   margin-bottom: 1rem;
+
+  @media (max-width: 1300px) {
+    font-size: 15px;
+  }
 `;
 
 export const Inputs = styled.form`
@@ -97,6 +109,10 @@ export const Input = styled.div`
     color: #e0afa0;
     filter: drop-shadow(4px 7px 9px rgba(0, 0, 0, 0.25));
     padding: 0 1.3rem;
+
+    @media (max-width: 1300px) {
+      font-size: 14px;
+    }
   }
 
   &::placeholder {
@@ -121,6 +137,10 @@ export const Message = styled.div`
     filter: drop-shadow(4px 7px 9px rgba(0, 0, 0, 0.25));
     padding: 0 1.2rem;
     line-height: 40px;
+
+    @media (max-width: 1300px) {
+      font-size: 14px;
+    }
   }
 
   &::placeholder {
@@ -147,6 +167,14 @@ export const Labels = styled.div`
     @media (max-width: 1400px) {
       font-size: 19px;
     }
+
+    @media (max-width: 1300px) {
+      font-size: 15px;
+    }
+
+    @media (max-width: 1200px) {
+      display: none;
+    }
   }
 
   p {
@@ -160,6 +188,10 @@ export const Labels = styled.div`
 
     @media (max-width: 1400px) {
       font-size: 14px;
+    }
+
+    @media (max-width: 1300px) {
+      font-size: 13px;
     }
   }
 `;
@@ -177,6 +209,10 @@ export const Icons = styled.div`
 
     @media (max-width: 1400px) {
       font-size: 24px;
+    }
+
+    @media (max-width: 1300px) {
+      font-size: 20px;
     }
   }
 `;

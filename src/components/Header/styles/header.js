@@ -30,6 +30,10 @@ export const Link = styled.h3`
   @media (max-width: 1360px) {
     font-size: 1rem;
   }
+
+  @media (max-width: 1300px) {
+    font-size: 0.9rem;
+  }
 `;
 
 export const Icons = styled.div`
@@ -46,6 +50,10 @@ export const Icon = styled.div`
 
     @media (max-width: 1360px) {
       font-size: 25px;
+    }
+
+    @media (max-width: 1300px) {
+      font-size: 22px;
     }
   }
 `;
