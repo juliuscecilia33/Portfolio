@@ -10,8 +10,8 @@ export function HeroTwoContainer() {
             Hi, I'm <span>Julius</span>
           </HeroTwo.Title>
           <HeroTwo.Description>
-            I’m a student at the <span>University of Washington</span> intending
-            to major in Informatics! <br /> <br />I envision myself to become a{" "}
+            I’m a student at the <span>University of Washington</span> majoring
+            in Informatics! <br /> <br />I envision myself to become a{" "}
             <span>Software Engineer</span> as I want to create and help others
             in their everyday lives through the form of a website or app. <br />{" "}
             <br />I found my passion for programming at the start of my college

@@ -13,7 +13,7 @@ import {
   Title,
   Description,
   Button,
-} from "./styles/projectsH";
+} from "./styles/projectsh";
 
 export default function ProjectsH({ children, ...restProps }) {
   return <Container {...restProps}>{children}</Container>;
