@@ -36,15 +36,6 @@ export function HeaderContainer({ bgColor }) {
             </a>
           </Header.Icon>
           <Header.Icon>
-            <a
-              href="https://slack.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i class="fab fa-slack"></i>
-            </a>
-          </Header.Icon>
-          <Header.Icon>
             <CopyToClipboard text="julius!#4803">
               <button onClick={() => setCopy(true)}>
                 <i class="fab fa-discord"></i>

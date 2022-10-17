@@ -4,11 +4,8 @@ import emailjs from "emailjs-com";
 import { init } from "emailjs-com";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import { Alert } from "@material-ui/lab";
-const {
-  REACT_APP_USER_ID,
-  REACT_APP_SERVICE_ID,
-  REACT_APP_TEMPLATE_ID,
-} = process.env;
+const { REACT_APP_USER_ID, REACT_APP_SERVICE_ID, REACT_APP_TEMPLATE_ID } =
+  process.env;
 init(REACT_APP_USER_ID);
 
 export function ContactContainer() {
@@ -62,13 +59,6 @@ export function ContactContainer() {
                 rel="noopener noreferrer"
               >
                 <i class="fab fa-linkedin"></i>
-              </a>
-              <a
-                href="https://slack.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="fab fa-slack"></i>
               </a>
               <CopyToClipboard text="julius!#4803">
                 <button onClick={() => setCopy(true)}>
